@@ -9,8 +9,6 @@ I blame BeamNG's devs for not giving us a visual representitive at this time (0.
 ___
 
 ## INSTALLATION
-Download as zip and dump into your BeamNG resource folder `C:\Users\<Username>\AppData\Local\BeamNG.drive\<Version Number>` and enable the mod through the in-game menu.
-
-Alternatively because this mod is compatible with many online servers especially Dudekahedron's *Road Dogs CareerMP* BeamMP server, so you can just dump the json files in their associated directories.
+Read the official documentation: https://documentation.beamng.com/tutorials/mods/installing-mods/
 
 Feel free to fork and change without permission. No warranty provided. I'll probably put this on the official repo in the future though.
