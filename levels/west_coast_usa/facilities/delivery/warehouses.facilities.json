@@ -1,0 +1,47 @@
+{
+  "deliveryProviders":[
+    {
+      "id":"industrialWarehouse",
+      "name":"Industrial Warehouse",
+      "description":"Ships and receives a wide variety of cargo types.",
+      "preview":"previews/industrialWarehouse.jpg",
+      "pickUpSpotNames":["industrialWarehouse_parkingB"],
+      "dropOffSpotNames":["industrialWarehouse_parkingB"],
+      "sitesFile":"warehouses.sites.json",
+      "showIncomingCargo":true,
+      "logisticTypesProvided":["parcel","shopSupplies","officeSupplies","mechanicalParts","foodSupplies", "industrial"],
+      "logisticTypesReceived":["parcel","shopSupplies","officeSupplies","mechanicalParts","foodSupplies", "industrial"],
+      "logisticMaxItems":12,
+      "unlockCondition":{"type":"minItemCount","target":1}
+    },
+    {
+      "id":"rentabox",
+      "name":"Rent-A-Box",
+      "description":"Ships and receives a wide variety of cargo types.",
+      "preview":"previews/rentabox.jpg",
+      "pickUpSpotNames":["rentabox_parking"],
+      "dropOffSpotNames":["rentabox_parking"],
+      "sitesFile":"warehouses.sites.json",
+      "showIncomingCargo":true,
+      "logisticTypesProvided":["parcel","shopSupplies","officeSupplies","mechanicalParts","foodSupplies"],
+      "logisticTypesReceived":["parcel","shopSupplies","officeSupplies","mechanicalParts","foodSupplies"],
+      "logisticMaxItems":8,
+      "unlockCondition":{"type":"minItemCount","target":1}
+    },
+    {
+      "id":"spearleafLogistics",
+      "name":"Spearleaf Logistics",
+      "description":"Ships and receives a wide variety of cargo types.",
+      "preview":"previews/spearleafLogistics.jpg",
+
+      "pickUpSpotNames":["spearleafLogistics_parkingB", "spearleafLogistics_parkingA"],
+      "dropOffSpotNames":["spearleafLogistics_parkingB", "spearleafLogistics_parkingA"],
+      "sitesFile":"warehouses.sites.json",
+      "showIncomingCargo":true,
+      "logisticTypesProvided":["parcel","shopSupplies","officeSupplies","mechanicalParts","foodSupplies", "industrial"],
+      "logisticTypesReceived":["parcel","shopSupplies","officeSupplies","mechanicalParts","foodSupplies", "industrial"],
+      "logisticMaxItems":22,
+      "unlockCondition":{"type":"minItemCount","target":1}
+    }
+  ]
+}
