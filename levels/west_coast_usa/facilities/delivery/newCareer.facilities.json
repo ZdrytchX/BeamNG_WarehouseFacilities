@@ -478,8 +478,8 @@
       "name":"Active Attraction Spot",
       "description":"Random people ordering junk food and occasional emergency aid. Maybe they'll send some postage once in a blue moon",
       "preview":"previews/untitled.PNG",
-      "pickUpSpotNames":["BeachSide","JettyLookout","tennisCourts"],
-	  "dropOffSpotNames":["BeachSide","JettyLookout","tennisCourts"],
+      "pickUpSpotNames":["BeachSide","JettyLookout","tennisCourts","LighthouseParking"],
+	  "dropOffSpotNames":["BeachSide","JettyLookout","tennisCourts","LighthouseParking"],
       "sitesFile":"newCareer.sites.json",
       "showIncomingCargo":true,
       "logisticTypesProvided":["parcel"],
@@ -503,7 +503,7 @@
           "type":"receiver",
           "logisticTypes":["food"],
           "min":-1,
-          "max":1,
+          "max":5,
           "interval":120
         }
       ],
@@ -829,7 +829,29 @@
       ],
     },
 //Construction Facilities alike
-
+	{
+      "id":"constructionzoneNearHighway",
+      "name":"Construction Zone - Near Highway",
+      "description":"The unofficial WIP zone",
+      "preview":"previews/untitled.jpg",
+      "pickUpSpotNames":["UnderConstructionAreaNearHighway"],
+      "dropOffSpotNames":["UnderConstructionAreaNearHighway"],
+      "sitesFile":"newCareer.sites.json",
+      "showIncomingCargo":true,
+      "logisticTypesProvided":[],
+      "logisticTypesReceived":["parcel"],
+      "unlockCondition":{"type":"minItemCount","target":1},
+	  "logisticGenerators":[
+	    {
+          "type":"receiver",
+          "logisticTypes":["parcel","industrial"],
+          "min":-1,
+          "max":3,
+          "interval":120
+        }
+      ],
+    },
+/*
     {
       "id":"drill",
       "name":"Drill Sites",
@@ -841,7 +863,6 @@
       "showIncomingCargo":true,
       "logisticTypesProvided":[],
       "logisticTypesReceived":["medicalAid","food"],
-      "unlockCondition":{"type":"minItemCount","target":1},
 	  "logisticGenerators":[
 	    {
           "type":"receiver",
@@ -858,6 +879,7 @@
         }
       ],
     },
+*/
 //other
 	{
       "id":"EasyAutoRepairGarage",
@@ -934,29 +956,7 @@
       ],
     },
 	{
-      "id":"extractorDrills",
-      "name":"Oil Extractors",
-      "description":"The Sqweak of Global Warming",
-      "preview":"previews/untitled.jpg",
-      "pickUpSpotNames":["OilDrill"],
-      "dropOffSpotNames":["OilDrill"],
-      "sitesFile":"newCareer.sites.json",
-      "showIncomingCargo":true,
-      "logisticTypesProvided":[],
-      "logisticTypesReceived":["parcel"],
-      "unlockCondition":{"type":"minItemCount","target":1},
-	  "logisticGenerators":[
-	    {
-          "type":"receiver",
-          "logisticTypes":["parcel"],
-          "min":-3,
-          "max":1,
-          "interval":120
-        }
-      ],
-    },
-	{
-      "id":"extractorDrills",
+      "id":"solarFarm",
       "name":"Oil Extractors",
       "description":"The Sqweak of Global Warming",
       "preview":"previews/untitled.jpg",
