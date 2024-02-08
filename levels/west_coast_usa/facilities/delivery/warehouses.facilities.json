@@ -19,9 +19,9 @@
 	  "industrialWarehouse_parkingA"],
       "sitesFile":"warehouses.sites.json",
       "showIncomingCargo":true,
-      "logisticTypesProvided":["parcel","shopSupplies","officeSupplies","mechanicalParts","foodSupplies", "industrial"],
+      "logisticTypesProvided":["parcel","shopSupplies","officeSupplies","mechanicalParts","foodSupplies", "industrial","medicalAid"],
       "logisticTypesReceived":["parcel","shopSupplies","officeSupplies","mechanicalParts","foodSupplies", "industrial"],
-      "logisticMaxItems":52,
+      "logisticMaxItems":92,
       "unlockCondition":{"type":"minItemCount","target":1}
     },
     {
