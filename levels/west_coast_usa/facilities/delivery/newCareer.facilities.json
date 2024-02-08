@@ -443,7 +443,7 @@
 //SECRET TUNNELS
     {
       "id":"ServiceTunnels",
-      "name":"Service Tunnel",
+      "name":"Tunnel",
       "description":"Some suspicious business is going on in these parts...",
       "preview":"previews/untitled.PNG",
       "pickUpSpotNames":["ServiceTunnelUnderCityRiver","ServiceTunnelNorthEast"],
@@ -460,7 +460,6 @@
           "logisticTypes":["parcel"],
           "min":-2,
           "max":3,
-          "slotsMax":8,
           "interval":300
         }, {
           "type":"receiver",
@@ -478,8 +477,8 @@
       "name":"Active Attraction Spot",
       "description":"Random people ordering junk food and occasional emergency aid. Maybe they'll send some postage once in a blue moon",
       "preview":"previews/untitled.PNG",
-      "pickUpSpotNames":["BeachSide","JettyLookout","tennisCourts","LighthouseParking"],
-	  "dropOffSpotNames":["BeachSide","JettyLookout","tennisCourts","LighthouseParking"],
+      "pickUpSpotNames":["tennisCourts","LighthouseParking"],
+	  "dropOffSpotNames":["tennisCourts","LighthouseParking"],
       "sitesFile":"newCareer.sites.json",
       "showIncomingCargo":true,
       "logisticTypesProvided":["parcel"],
@@ -777,8 +776,8 @@
       "name":"SCUBA Diving",
       "description":"Random people ordering junk food and occasional emergency aid.",
       "preview":"previews/untitled.PNG",
-      "pickUpSpotNames":["BeachSide"],
-      "dropOffSpotNames":["BeachSide"],
+      "pickUpSpotNames":["BeachSide","JettyLookout"],
+      "dropOffSpotNames":["BeachSide","JettyLookout"],
       "sitesFile":"newCareer.sites.json",
       "showIncomingCargo":true,
       "logisticTypesProvided":[],

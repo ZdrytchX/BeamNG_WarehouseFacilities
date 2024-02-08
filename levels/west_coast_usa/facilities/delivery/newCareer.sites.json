@@ -1486,7 +1486,7 @@
           "name":"string"
         },
         "values":{
-          "name":"Parking"
+          "name":"Lighthouse Parking"
         }
       },
       "isMultiSpot":false,
@@ -1684,7 +1684,7 @@
           "name":"string"
         },
         "values":{
-          "name":"North East Tunnel Service Door"
+          "name":"North East Service Door"
         }
       },
       "isMultiSpot":false,
