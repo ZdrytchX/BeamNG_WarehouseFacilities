@@ -66,7 +66,7 @@
         }
       },
       "isMultiSpot":false,
-      "name":"MobileTower",
+      "name":"MobileTowerSite",
       "oldId":1820,
       "pos":[
         873.8727417,
@@ -108,7 +108,7 @@
         }
       },
       "isMultiSpot":false,
-      "name":"RadioStation",
+      "name":"RadioStationLookout",
       "oldId":1821,
       "pos":[
         655.6157227,
@@ -234,7 +234,7 @@
         }
       },
       "isMultiSpot":false,
-      "name":"PigeonHouse",
+      "name":"PigeonHouseTwinLocation",
       "oldId":1824,
       "pos":[
         -224.4277039,
@@ -276,7 +276,7 @@
         }
       },
       "isMultiSpot":false,
-      "name":"HideAtHome",
+      "name":"HideAtHomeLocation",
       "oldId":1825,
       "pos":[
         -175.8710327,
@@ -1028,7 +1028,7 @@
         "values":{}
       },
       "isMultiSpot":false,
-      "name":"TrainStation",
+      "name":"TrainStationBusStop",
       "oldId":1843,
       "pos":[
         -425.9347229,
@@ -1898,7 +1898,7 @@
         }
       },
       "isMultiSpot":false,
-      "name":"tennisCourts",
+      "name":"tennisCourtsReception",
       "oldId":1934,
       "pos":[
         -28.88233376,
@@ -1940,7 +1940,7 @@
         }
       },
       "isMultiSpot":false,
-      "name":"solarFarm",
+      "name":"solarFarmParking",
       "oldId":1937,
       "pos":[
         -208.6551514,

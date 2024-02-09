@@ -2,7 +2,7 @@
   "deliveryProviders":[
 //RACEWAY
     {
-		"id":"raceway",
+		"id":"racewayCircuitLocation",
 		"name":"Raceway Circuit",
 		"description":"Random people ordering junk food and mechanical parts.",
 		"preview":"previews/untitled.PNG",
@@ -46,13 +46,13 @@
 		"sitesFile":"newCareer.sites.json",
 		"showIncomingCargo":true,
 		"logisticTypesProvided":["parcel"],
-		"logisticTypesReceived":["parcel","medicalAid","food","officeSupplies","money"],
+		"logisticTypesReceived":["parcel","medicalAid","food","officeSupplies","moneh"],
 		"logisticMaxItems":5,
 		"unlockCondition":{"type":"minItemCount","target":1},
 		"logisticGenerators":[
 		{
 		  "type":"provider",
-		  "logisticTypes":["parcel","money"],
+		  "logisticTypes":["parcel","moneh"],
 		  "min":-3,
 		  "max":1,
 		  "interval":120
@@ -73,12 +73,12 @@
     },
 //TRAIN STATION
     {
-		"id":"TrainStation",
+		"id":"TrainStationLocation",
 		"name":"Train Station",
 		"description":"IDK, whatever people do at train stations I guess.",
 		"preview":"previews/untitled.PNG",
 		"dropOffSpotNames":["TrainStationServiceTunnel"],
-		"pickUpSpotNames":["TrainStation","TrainStationServiceTunnel"],
+		"pickUpSpotNames":["TrainStationBusStop","TrainStationServiceTunnel"],
 		"sitesFile":"newCareer.sites.json",
 		"showIncomingCargo":true,
 		"logisticTypesProvided":["mechanicalParts","parcel"],
@@ -154,8 +154,8 @@
 		"sitesFile":"newCareer.sites.json",
 		"showIncomingCargo":true,
 		"logisticTypesProvided":["mechanicalParts","parcel"],
-		"logisticTypesReceived":["parcel","medicalAid","food","officeSupplies"],
-		"logisticMaxItems":20,
+		"logisticTypesReceived":["parcel","medicalAid","food","officeSupplies","foodSupplies"],
+		"logisticMaxItems":10,
 		"unlockCondition":{"type":"minItemCount","target":1},
 		"logisticGenerators":[
 		{
@@ -174,11 +174,11 @@
 		  "type":"receiver",
 		  "logisticTypes":["foodSupplies","food"],
 		  "min":-1,
-		  "max":20,
+		  "max":1,
 		  "interval":120
 		}, {
 		  "type":"receiver",
-		  "logisticTypes":["officeSupplies"],
+		  "logisticTypes":["officeSupplies","parcel"],
 		  "min":-5,
 		  "max":3,
 		  "interval":120
@@ -187,7 +187,7 @@
 		  "logisticTypes":["medicalAid"],
 		  "min":-5,
 		  "max":1,
-		  "interval":120
+		  "interval":300
 		}
 		],
     },
@@ -233,7 +233,7 @@
 		],
     },
     {
-		"id":"churchEntrance",
+		"id":"churchEntranceEntryway",
 		"name":"Belasco City Church",
 		"description":"Don't forget kids, after you bang one job and confess another one out and you're good for heaven's sake! Also virgin sages are a must-have at least until marriage but nobody said anything about a back door-",
 		"preview":"previews/untitled.PNG",
@@ -275,7 +275,7 @@
       "logisticTypesProvided":["parcel"],
       "logisticTypesReceived":["parcel","mechanicalParts","officeSupplies","industrial","shopSupplies","foodSupplies"],
       "logisticMaxItems":30,
-      "unlockCondition":{"type":"minItemCount","target":1},
+      "unlockCondition":{"type":"minItemCount","target":5},
 	  "logisticGenerators":[
         {
           "type":"provider",
@@ -316,7 +316,7 @@
       "logisticTypesProvided":["parcel"],
       "logisticTypesReceived":["parcel","medicalAid","mechanicalParts","officeSupplies","shopSupplies","food"],
       "logisticMaxItems":6,
-      "unlockCondition":{"type":"minItemCount","target":1},
+      "unlockCondition":{"type":"minItemCount","target":3},
 	  "logisticGenerators":[
         {
           "type":"provider",
@@ -354,7 +354,7 @@
       "logisticTypesProvided":["industrial","parcel"],
       "logisticTypesReceived":["industrial","food","medicalAid","parcel","mechanicalParts"],
       "logisticMaxItems":16,
-      "unlockCondition":{"type":"minItemCount","target":1},
+      "unlockCondition":{"type":"minItemCount","target":2},
 	  "logisticGenerators":[
         {
           "type":"provider",
@@ -399,7 +399,7 @@
       "unlockCondition":{"type":"minItemCount","target":1}
     },
     {
-      "id":"refineryIsland",
+      "id":"refineryIslandStuff",
       "name":"Spearleaf Refinery",
       "description":"So where does the dirty oil end up? Maybe that's why the ocean's very blue today...",
       "preview":"previews/spawns_refinery.jpg",
@@ -442,7 +442,7 @@
     },
 //SECRET TUNNELS
     {
-      "id":"ServiceTunnels",
+      "id":"ServiceTunnelsUnderCity",
       "name":"Tunnel",
       "description":"Some suspicious business is going on in these parts...",
       "preview":"previews/untitled.PNG",
@@ -450,7 +450,7 @@
       "dropOffSpotNames":["ServiceTunnelUnderCityRiver","ServiceTunnelNorthEast"],
       "sitesFile":"newCareer.sites.json",
       "showIncomingCargo":true,
-      "logisticTypesProvided":["money","parcel"],
+      "logisticTypesProvided":["moneh","parcel"],
       "logisticTypesReceived":["parcel"],
       "logisticMaxItems":5,
       "unlockCondition":{"type":"minItemCount","target":1},
@@ -463,7 +463,7 @@
           "interval":300
         }, {
           "type":"receiver",
-          "logisticTypes":["money","parcel"],
+          "logisticTypes":["moneh","parcel"],
           "min":0,
           "max":3,
           "interval":300
@@ -473,12 +473,12 @@
 
 //TOURIST ATTRACTIONS
     {
-      "id":"touristAttractions",
+      "id":"touristAttractionsSpots",
       "name":"Active Attraction Spot",
       "description":"Random people ordering junk food and occasional emergency aid. Maybe they'll send some postage once in a blue moon",
       "preview":"previews/untitled.PNG",
-      "pickUpSpotNames":["tennisCourts","LighthouseParking"],
-	  "dropOffSpotNames":["tennisCourts","LighthouseParking"],
+      "pickUpSpotNames":["tennisCourtsReception","LighthouseParking"],
+	  "dropOffSpotNames":["tennisCourtsReception","LighthouseParking"],
       "sitesFile":"newCareer.sites.json",
       "showIncomingCargo":true,
       "logisticTypesProvided":["parcel"],
@@ -510,7 +510,7 @@
 
 //RESIDENTIAL AREAS
     {
-		"id":"privateHouses",
+		"id":"privateHousesRandom",
 		"name":"Quarry side Forest House",
 		"description":"Random people ordering junk food and occasional emergency aid. Maybe they'll send some postage once in a blue moon",
 		"preview":"previews/untitled.PNG",
@@ -552,12 +552,12 @@
 		],
     },
     {
-		"id":"PigeonHouse",
+		"id":"PigeonHouseTwin",
 		"name":"Pigeon's Twin House",
 		"description":"Random people ordering junk food and occasional emergency aid, maybe sends something once in a blue moon. Did you remember your first Pigeon delivery?",
 		"preview":"previews/pigeon.jpg",
-		"pickUpSpotNames":["PigeonHouse"],
-		"dropOffSpotNames":["PigeonHouse"],
+		"pickUpSpotNames":["PigeonHouseTwinLocation"],
+		"dropOffSpotNames":["PigeonHouseTwinLocation"],
 		"sitesFile":"newCareer.sites.json",
 		"showIncomingCargo":true,
 		"logisticTypesProvided":["parcel","shopSupplies"],
@@ -594,12 +594,12 @@
 		],
     },
     {
-		"id":"HideAtHome",
+		"id":"HideAtHomeHouse",
 		"name":"Hide@Home House",
 		"description":"Random people ordering junk food and occasional emergency aid. Occasionally sends suspicious packages. Did you run through the gates from the highway in the getaway?",
 		"preview":"previews/untitled.PNG",
-		"pickUpSpotNames":["HideAtHome"],
-		"dropOffSpotNames":["HideAtHome"],
+		"pickUpSpotNames":["HideAtHomeLocation"],
+		"dropOffSpotNames":["HideAtHomeLocation"],
 		"sitesFile":"newCareer.sites.json",
 		"showIncomingCargo":true,
 		"logisticTypesProvided":["parcel"],
@@ -800,12 +800,12 @@
       ],
     },
     {
-      "id":"radioStation",
+      "id":"radioStationLocatation",
       "name":"Radio Station",
       "description":"Random people ordering junk food and occasional emergency aid.",
       "preview":"previews/untitled.PNG",
-      "pickUpSpotNames":["RadioStation"],
-      "dropOffSpotNames":["RadioStation"],
+      "pickUpSpotNames":["RadioStationLookout"],
+      "dropOffSpotNames":["RadioStationLookout"],
       "sitesFile":"newCareer.sites.json",
       "showIncomingCargo":true,
       "logisticTypesProvided":[],
@@ -881,7 +881,7 @@
 */
 //other
 	{
-      "id":"EasyAutoRepairGarage",
+      "id":"EasyAutoRepairGarageSpot",
       "name":"Easy Auto Repair",
       "description":"Apparently this repair shop is oh so conveniently placed at a common crash point - Coming off the bridge at high speeds aha!",
       "preview":"previews/easyAutoRepairs.jpg",
@@ -921,12 +921,12 @@
       ],
     },
 	{
-      "id":"MobileTowers",
+      "id":"MobileTowersLocation",
       "name":"Mobile Tower",
       "description":"The enemy of the Bird",
       "preview":"previews/untitled.jpg",
-      "pickUpSpotNames":["MobileTowerNorth","MobileTower","MobileTower2"],
-      "dropOffSpotNames":["MobileTowerNorth","MobileTower","MobileTower2"],
+      "pickUpSpotNames":["MobileTowerNorth","MobileTowerSite","MobileTower2"],
+      "dropOffSpotNames":["MobileTowerNorth","MobileTowerSite","MobileTower2"],
       "sitesFile":"newCareer.sites.json",
       "showIncomingCargo":true,
       "logisticTypesProvided":["mechanicalParts","parcel"],
@@ -955,12 +955,12 @@
       ],
     },
 	{
-      "id":"solarFarm",
-      "name":"Oil Extractors",
+      "id":"solarFarmSite",
+      "name":"Solar Farm",
       "description":"The Sqweak of Global Warming",
       "preview":"previews/untitled.jpg",
-      "pickUpSpotNames":["solarFarm"],
-      "dropOffSpotNames":["solarFarm"],
+      "pickUpSpotNames":["solarFarmParking"],
+      "dropOffSpotNames":["solarFarmParking"],
       "sitesFile":"newCareer.sites.json",
       "showIncomingCargo":true,
       "logisticTypesProvided":[],
