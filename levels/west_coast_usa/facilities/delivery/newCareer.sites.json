@@ -902,7 +902,7 @@
           "name":"string"
         },
         "values":{
-          "name":"Parking"
+          "name":"Reception Parking"
         }
       },
       "isMultiSpot":false,
@@ -1528,7 +1528,7 @@
           "name":"string"
         },
         "values":{
-          "name":"Parking"
+          "name":"Reception Parking"
         }
       },
       "isMultiSpot":false,
@@ -1562,10 +1562,16 @@
         1
       ],
       "customFields":{
-        "names":{},
+        "names":[
+          "name"
+        ],
         "tags":{},
-        "types":{},
-        "values":{}
+        "types":{
+          "name":"string"
+        },
+        "values":{
+          "name":"Docks A"
+        }
       },
       "isMultiSpot":false,
       "name":"RefineryDocksA",
@@ -1894,7 +1900,7 @@
           "name":"string"
         },
         "values":{
-          "name":"Parking"
+          "name":"Tennis Courts Reception Parking"
         }
       },
       "isMultiSpot":false,

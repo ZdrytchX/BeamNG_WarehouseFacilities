@@ -147,7 +147,7 @@
     {
 		"id":"ChinaTownAlleyway",
 		"name":"China Town Back Alleyway",
-		"description":"What you doin' here? We not here to sell china to you! But we sell chabuduo food 233333 - Too bad Chinatown does not sell Honey Chicken.",
+		"description":"What you doin' here? Do not bring that damn truck here, it won't fit I tell you! Sorry we not sell Chinese-Australian style Honey Chicken.",
 		"preview":"previews/chinatownRestaurant.jpg",
 		"dropOffSpotNames":["ChinaTownAlleyway"],
 		"pickUpSpotNames":["ChinaTownAlleyway"],
@@ -156,7 +156,7 @@
 		"logisticTypesProvided":["mechanicalParts","parcel"],
 		"logisticTypesReceived":["parcel","medicalAid","food","officeSupplies","foodSupplies"],
 		"logisticMaxItems":10,
-		"unlockCondition":{"type":"minItemCount","target":1},
+		"unlockCondition":{"type":"minItemCount","target":3},
 		"logisticGenerators":[
 		{
 		  "type":"provider",
@@ -348,7 +348,7 @@
       "description":"So apparently they got lazy at production or something but they finally got around to making stuff.",
       "preview":"previews/steelFactory.jpg",
       "pickUpSpotNames":["HotRolledBackParking","HotRolledReception"],
-      "dropOffSpotNames":["HotRolledBackParking","HotRolledReception"],
+      "dropOffSpotNames":["HotRolledBackParking"],
       "sitesFile":"newCareer.sites.json",
       "showIncomingCargo":true,
       "logisticTypesProvided":["industrial","parcel"],
@@ -366,19 +366,19 @@
         }, {
           "type":"provider",
           "logisticTypes":["industrial"],
-          "min":0,
-          "max":15,
+          "min":-3,
+          "max":5,
           "interval":90
         }, {
           "type":"receiver",
           "logisticTypes":["industrial","mechanicalParts"],
-          "min":-1,
+          "min":-3,
           "max":5,
           "interval":90
         }, {
           "type":"receiver",
           "logisticTypes":["food","medicalAid","parcel"],
-          "min":-1,
+          "min":-5,
           "max":2,
           "interval":120
         }
@@ -921,7 +921,7 @@
       ],
     },
 	{
-      "id":"MobileTowersLocation",
+      "id":"MobilePhoneTowersLocation",
       "name":"Mobile Tower",
       "description":"The enemy of the Bird",
       "preview":"previews/untitled.jpg",
