@@ -20,7 +20,7 @@
           "name":"string"
         },
         "values":{
-          "name":"Scuba Diving Spot"
+          "name":"Beach Side"
         }
       },
       "isMultiSpot":false,
@@ -402,7 +402,7 @@
         }
       },
       "isMultiSpot":false,
-      "name":"MovieStudioDocksA",
+      "name":"Career_MovieStudioLoadingDocksA",
       "oldId":1828,
       "pos":[
         -780.8669434,
@@ -444,7 +444,7 @@
         }
       },
       "isMultiSpot":false,
-      "name":"MovieStudioDocksB",
+      "name":"Career_MovieStudioLoadingDocksB",
       "oldId":1829,
       "pos":[
         -777.336731,
@@ -486,7 +486,7 @@
         }
       },
       "isMultiSpot":false,
-      "name":"MovieStudioDocksC",
+      "name":"Career_MovieStudioLoadingDocksC",
       "oldId":1830,
       "pos":[
         -770.0359497,
@@ -528,7 +528,7 @@
         }
       },
       "isMultiSpot":false,
-      "name":"MovieStudioDocksD",
+      "name":"Career_MovieStudioLoadingDocksD",
       "oldId":1831,
       "pos":[
         -764.734314,
@@ -566,11 +566,11 @@
           "name":"string"
         },
         "values":{
-          "name":"Loading Area - Stage 1"
+          "name":"Loading Area Stage 1"
         }
       },
       "isMultiSpot":false,
-      "name":"MovieStudioStage1",
+      "name":"Career_MovieStudioStage1",
       "oldId":1832,
       "pos":[
         -789.9124146,
@@ -612,7 +612,7 @@
         }
       },
       "isMultiSpot":false,
-      "name":"MovieStudioStage2",
+      "name":"Career_MovieStudioStage2",
       "oldId":1833,
       "pos":[
         -840.3790894,
@@ -654,7 +654,7 @@
         }
       },
       "isMultiSpot":false,
-      "name":"MovieStudioWaterTower",
+      "name":"Career_MovieStudioWaterTower",
       "oldId":1834,
       "pos":[
         -856.7119141,
@@ -696,7 +696,7 @@
         }
       },
       "isMultiSpot":false,
-      "name":"MovieStudioStage3LoadingArea",
+      "name":"Career_MovieStudioStage3LoadingArea",
       "oldId":1835,
       "pos":[
         -861.9827881,
@@ -1406,7 +1406,7 @@
         }
       },
       "isMultiSpot":false,
-      "name":"MovieStudioLandingArea",
+      "name":"Career_MovieStudioLandingArea",
       "oldId":1853,
       "pos":[
         -912.5952759,

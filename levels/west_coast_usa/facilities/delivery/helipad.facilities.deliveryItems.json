@@ -10,7 +10,7 @@
     "duplicationChance":[1,0.7,0.5,0.3,0.2],
     "offerDuration":210,
     "weight":[4],
-    "modChance":{"timed":0.7},
+    "modChance":{"timed":0.7,"fragile":0},
   },
   "heavyMedicalMachine": {
     "names":["Anaesthetic Doseage Machine","Magnetic Resonance Imaging Machine"],
@@ -23,7 +23,7 @@
     "duplicationChance":[1,0.7,0.5,0.3,0.2],
     "offerDuration":210,
     "weight":[32],
-    "modChance":{"timed":0.7},
+    "modChance":{"timed":0.7,"fragile":0},
   },
   "lettersOfUrgency": {
     "names":["Notice of the Deceased","Notice of Urgency"],
@@ -36,7 +36,7 @@
     "duplicationChance":[1,0.7,0.5,0.3,0.2],
     "offerDuration":210,
     "weight":[1],
-    "modChance":{"timed":0.7},
+    "modChance":{"timed":0.7,"fragile":0},
   },
  //ChatGPT gave me this list here on out roflmfao - edited of course
   "medicalVentilator": {
@@ -50,7 +50,7 @@
     "duplicationChance": [1, 0.7, 0.5, 0.3, 0.2],
     "offerDuration": 180,
     "weight": [4],
-    "modChance": { "timed": 0.6 }
+    "modChance": { "timed": 0.6 ,"fragile":0}
   },
   "bandagesAndOtherSmallItems": {
     "names": ["Sterile Gauze Bandages", "Elastic Compression Bandages", "pH Analysis Test Strips", "Excretion Dip Tests"],
@@ -63,7 +63,7 @@
     "duplicationChance": [1, 0.7, 0.5, 0.3, 0.2],
     "offerDuration": 180,
     "weight": [1],
-    "modChance": { "timed": 0.6 }
+    "modChance": { "timed": 0.6,"fragile":0 }
   },
   "antibiotics": {
     "names": ["Broad-Spectrum Antibiotics", "Topical Antibiotic Ointment"],
@@ -76,7 +76,7 @@
     "duplicationChance": [1, 0.7, 0.5, 0.3, 0.2],
     "offerDuration": 240,
     "weight": [1],
-    "modChance": { "timed": 0.5 }
+    "modChance": { "timed": 0.5,"fragile":0 }
   },
   "splints": {
     "names": ["Fiberglass Arm Splints", "Ankle Stabilizing Splints"],
@@ -89,7 +89,7 @@
     "duplicationChance": [1, 0.7, 0.5, 0.3, 0.2],
     "offerDuration": 180,
     "weight": [3],
-    "modChance": { "timed": 0.6 }
+    "modChance": { "timed": 0.6,"fragile":0 }
   },
   "painkillers": {
     "names": ["Acetaminophen Tablets", "Ibuprofen Capsules"],
@@ -102,7 +102,7 @@
     "duplicationChance": [1, 0.7, 0.5, 0.3, 0.2],
     "offerDuration": 1800,
     "weight": [2],
-    "modChance": { "timed": 0.1 }
+    "modChance": { "timed": 0.1,"fragile":0 }
   },
   "surgical_masks": {
     "names": ["Disposable Surgical Masks", "N95 Respirator Masks"],
@@ -115,7 +115,7 @@
     "duplicationChance": [1, 0.7, 0.5, 0.3, 0.2],
     "offerDuration": 1240,
     "weight": [3],
-    "modChance": { "timed": 0.5 }
+    "modChance": { "timed": 0.5,"fragile":0 }
   },
   "medical_gloves": {
     "names": ["Latex Examination Gloves", "Nitrile Medical Gloves"],
@@ -128,11 +128,11 @@
     "duplicationChance": [1, 0.7, 0.5, 0.3, 0.2],
     "offerDuration": 1800,
     "weight": [3],
-    "modChance": { "timed": 0.1 }
+    "modChance": { "timed": 0.1,"fragile":0 }
   },
   "blood_transfusions": {
     "names": ["O Negative Blood Bags", "AB Positive Plasma"],
-    "logisticTypes": ["helicopter"],
+    "logisticTypes": ["medicalAid"],
     "slots": [2],
     "cargoType": "parcel",
     "rarity": 2,
@@ -141,7 +141,7 @@
     "duplicationChance": [1, 0.7, 0.5, 0.3, 0.2],
     "offerDuration": 240,
     "weight": [8],
-    "modChance": { "timed": 1 }
+    "modChance": { "timed": 1,"fragile":0 }
   },
   "organ_transplants": {
     "names": ["Heart for Transplant", "Kidney for Transplant"],
@@ -154,7 +154,7 @@
     "duplicationChance": [1, 0.7, 0.5, 0.3, 0.2],
     "offerDuration": 360,
     "weight": [5],
-    "modChance": { "timed": 0.4 }
+    "modChance": { "timed": 0.4,"fragile":0 }
   },
   "emergency_medications": {
     "names": ["Clot-Busting Drugs", "Antivenom Vials"],
@@ -167,7 +167,7 @@
     "duplicationChance": [1, 0.7, 0.5, 0.3, 0.2],
     "offerDuration": 240,
     "weight": [1,2,3,4],
-    "modChance": { "timed": 0.5 }
+    "modChance": { "timed": 0.5,"fragile":0 }
   },
   "medical_equipment": {
     "names": ["Portable Ultrasound Machine", "Ventilator", "Microscope", "Atomic Absorption Specrum Analyser", "UV-Vis Machine"],
@@ -180,7 +180,7 @@
     "duplicationChance": [1, 0.7, 0.5, 0.3, 0.2],
     "offerDuration": 180,
     "weight": [3,4,5,6,7,8],
-    "modChance": { "timed": 0.6 }
+    "modChance": { "timed": 0.6,"fragile":0 }
   },
   "specialized_medical_kits": {
     "names": ["Emergency Medical Response Kit", "Trauma Kit"],
@@ -193,6 +193,6 @@
     "duplicationChance": [1],
     "offerDuration": 360,
     "weight": [1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16],
-    "modChance": { "timed": 1 }
+    "modChance": { "timed": 1,"fragile":0 }
   }
 }

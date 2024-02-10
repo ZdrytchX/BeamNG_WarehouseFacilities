@@ -1,0 +1,15 @@
+{
+	"petroleum_careerMode_1000L": {
+		"names":["1000L Petroleum"],
+		"logisticTypes":["petroleum_careerMode"],
+		"slots":[1000],
+		"cargoType":"liquidFuelCareer",
+		"rarity":1,
+		"worth":0.1,
+		"generationChance":1,
+		"duplicationChance":[1,0.9,0.8,0.7,0.6,0.5,0.4,0.3,0.2,0.1],
+		"offerDuration":900,
+		"weight":[750],
+		"modChance":{"timed":0.3,"fragile":0},
+	},
+}

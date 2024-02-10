@@ -25,7 +25,7 @@
       },
       "isMultiSpot":false,
       "name":"hospital_helipad",
-      "oldId":22,
+      "oldId":1910,
       "pos":[
         -306.5192566,
         445.6552429,
@@ -67,7 +67,7 @@
       },
       "isMultiSpot":false,
       "name":"hospital_helipad_walkway",
-      "oldId":23,
+      "oldId":1911,
       "pos":[
         -317.9532471,
         448.0058594,
@@ -89,6 +89,84 @@
       "spotOffset":0,
       "spotRotation":0
     },
+    {
+      "color":[
+        1,
+        1,
+        1
+      ],
+      "customFields":{
+        "names":[
+          "name"
+        ],
+        "tags":{},
+        "types":{
+          "name":"string"
+        },
+        "values":{
+          "name":"Top of the World"
+        }
+      },
+      "isMultiSpot":false,
+      "name":"topOfTheWorldSkyScraper",
+      "oldId":1912,
+      "pos":[
+        -517.9744873,
+        509.2076416,
+        275.0682983
+      ],
+      "rot":[
+        0,
+        0,
+        -0.3826421317,
+        0.923779786
+      ],
+      "scl":[
+        9.414143609,
+        9.816637583,
+        3
+      ],
+      "spotAmount":1,
+      "spotDirection":"Left",
+      "spotOffset":0,
+      "spotRotation":0
+    },
+    {
+      "color":[
+        1,
+        1,
+        1
+      ],
+      "customFields":{
+        "names":{},
+        "tags":{},
+        "types":{},
+        "values":{}
+      },
+      "isMultiSpot":false,
+      "name":"ChurchTower",
+      "oldId":1915,
+      "pos":[
+        -858.6700439,
+        309.1590881,
+        197.8536835
+      ],
+      "rot":[
+        0,
+        0,
+        0.9227397021,
+        -0.3854238983
+      ],
+      "scl":[
+        6.993304234,
+        5.47568048,
+        3
+      ],
+      "spotAmount":1,
+      "spotDirection":"Left",
+      "spotOffset":0,
+      "spotRotation":0
+    }
   ],
   "zones":{}
 }

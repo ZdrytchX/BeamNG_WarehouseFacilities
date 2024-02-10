@@ -3,7 +3,7 @@
     {
       "id":"hospitalHelipad",
       "name":"Hospital Helicopter Rooftop",
-      "description":"Receives and sends essential goods for the hospital and surrounding emergency services. You can't get here without an aircraft, at least not the normal way.",
+      "description":"Receives and sends essential goods for the hospital and surrounding emergency services. You can\'t get here without an aircraft, at least not the normal way.",
       "preview":"previews/hospital.jpg",
       "pickUpSpotNames":["hospital_helipad_walkway"],
       "dropOffSpotNames":["hospital_helipad"],
@@ -37,7 +37,7 @@
           "logisticTypes":["medicalAid"],
           "min":0,
           "max":6,
-          "interval":120
+          "interval":20
         }, {
           "type":"provider",
           "logisticTypes":["medicalAid","parcel"],

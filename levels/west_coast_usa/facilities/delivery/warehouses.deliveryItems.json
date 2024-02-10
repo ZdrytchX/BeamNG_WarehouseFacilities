@@ -164,7 +164,7 @@
     "modChance":{"fragile":0.75, "timed":0.2},
   },
   "secretHeavyGoods": {
-    "names":["Stack of Doujinshi","Otaku's Stash of Hentai","Old Treasure","Legacy Bishojo Games","Suspicious Merchandise","Military Equipment","Kit built Car","Compressor","Generator","436 Magazine Copies of BeamNG.Drive's Biggest Secrets"],
+    "names":["Stack of Doujinshi","Otaku\'s Stash of Hentai","Old Treasure","Legacy Bishojo Games","Suspicious Merchandise","Military Equipment","Kit built Car","Compressor","Generator","436 Magazine Copies of BeamNG.Drive\'s Biggest Secrets"],
     "logisticTypes":["officeSupplies"],
     "slots":32,
     "cargoType":"parcel",
@@ -177,7 +177,7 @@
     "modChance":{"fragile":0.25, "timed":0.23},
   },
   "secretMediumGoods": {
-    "names":["Stack of Doujinshi","Undisclosed Goods","Old Treasure","Legacy Bishojo Games","Suspicious Merchandise","Video Game Guides","Magazines: WESTvsEast Politik: Beamling's Worst Nightmare","CrapShack: What not to do on a video sharing platform","Gambler500: How we came official BeamNG Lore","Ibishu Confidential Documentation","State Secret Documentation","Challenger 2 Documents","Video Game Guides"],
+    "names":["Stack of Doujinshi","Undisclosed Goods","Old Treasure","Legacy Bishojo Games","Suspicious Merchandise","Video Game Guides","Magazines: WESTvsEast Politik: Beamling\'s Worst Nightmare","CrapShack: What not to do on a video sharing platform","Gambler500: How we came official BeamNG Lore","Ibishu Confidential Documentation","State Secret Documentation","Challenger 2 Documents","Video Game Guides"],
     "logisticTypes":["shopSupplies"],
     "slots":16,
     "cargoType":"parcel",
@@ -190,7 +190,7 @@
     "modChance":{"fragile":0.25, "timed":0.25},
   },
   "secretLightGoods": {
-    "names":["Stack of Doujinshi","Undisclosed Goods","Old Treasure","Legacy Bishojo Games","Suspicious Merchandise","Video Game Guides","VideoGameConsole","Old Man's Treasure","Special Basement Supplies","Adult Toys","Magazines: BeamNG.Drive's Biggest Secrets","Smuggled Tremulous Granger Plushies","Smuggled Unvanqushed Granger Plushies","Smuggled Unvarnished Granger Plushies","Smuggled Murnatan Granger Plushies","CrapShack: What not to do on a video sharing platform","Gambler500: How we came official BeamNG Lore","Ibishu Confidential Documentation","State Secret Documentation","Challenger 2 Documents","Video Game Guides","Wart Tundra Dogfighting Guides","DH Super Gnat: The Legacy of Darren9's Pioneering Efforts"],
+    "names":["Stack of Doujinshi","Undisclosed Goods","Old Treasure","Legacy Bishojo Games","Suspicious Merchandise","Video Game Guides","VideoGameConsole","Old Man\'s Treasure","Special Basement Supplies","Adult Toys","Magazines: BeamNG.Drive\'s Biggest Secrets","Smuggled Tremulous Granger Plushies","Smuggled Unvanqushed Granger Plushies","Smuggled Unvarnished Granger Plushies","Smuggled Murnatan Granger Plushies","CrapShack: What not to do on a video sharing platform","Gambler500: How we came official BeamNG Lore","Ibishu Confidential Documentation","State Secret Documentation","Challenger 2 Documents","Video Game Guides","Wart Tundra Dogfighting Guides","DH Super Gnat: The Legacy of Darren9\'s Pioneering Efforts"],
     "logisticTypes":["parcel"],
     "slots":[4,6,8],
     "cargoType":"parcel",
@@ -203,7 +203,7 @@
     "modChance":{"fragile":0.25, "timed":0.25},
   },
   "secretUltraLightGoods": {
-    "names":["Stack of Doujinshi","Undisclosed Goods","Old Treasure","Legacy Bishojo Games","Suspicious Merchandise","Video Game Guides","VideoGameConsole","Old Man's Treasure","Special Basement Supplies","Adult Toys","Newspaper: Belasco Finance: How Trilobite took over Belasco City","Newspaper: Belasco Finance: Quarry Workers on Strike over lack of Bus Services","Magazines: BeamNG.Drive's Biggest Secrets","Smuggled Tremulous Granger Plushies","Smuggled Unvanqushed Granger Plushies","Smuggled Unvarnished Granger Plushies","Smuggled Murnatan Granger Plushies","CrapShack: What not to do on a video sharing platform","Magazines: Gambler500: How we came official BeamNG Lore","Ibishu Confidential Documentation","State Secret Documentation","ZdrytchX's Crapshack Tutorials","Video Game Guides","Wart Tundra Dogfighting Guides","DH Super Gnat: The Legacy of Darren9's Pioneering Efforts","Flute","Laptop","Children's Treasure","Books","Audio Books: F-Word is perhaps the most versatile word in the English Vocabulary","Pamphlets: Rich Motors Dealership","Books: Cthulu's A-Bomb-A-Nation guide","Books: Tyranno's War on Trilobite's Tyranny","Dude's Dodecahedron","Duke's Dudekahedron","Scientific Equipment","Server Equipment"],
+    "names":["Stack of Doujinshi","Undisclosed Goods","Old Treasure","Legacy Bishojo Games","Suspicious Merchandise","Video Game Guides","VideoGameConsole","Old Man\'s Treasure","Special Basement Supplies","Adult Toys","Newspaper: Belasco Finance: How Trilobite took over Belasco City","Newspaper: Belasco Finance: Quarry Workers on Strike over lack of Bus Services","Magazines: BeamNG.Drive\'s Biggest Secrets","Smuggled Tremulous Granger Plushies","Smuggled Unvanqushed Granger Plushies","Smuggled Unvarnished Granger Plushies","Smuggled Murnatan Granger Plushies","CrapShack: What not to do on a video sharing platform","Magazines: Gambler500: How we came official BeamNG Lore","Ibishu Confidential Documentation","State Secret Documentation","ZdrytchX\'s Crapshack Tutorials","Video Game Guides","Wart Tundra Dogfighting Guides","DH Super Gnat: The Legacy of Darren9\'s Pioneering Efforts","Flute","Laptop","Children\'s Treasure","Books","Audio Books: F-Word is perhaps the most versatile word in the English Vocabulary","Pamphlets: Rich Motors Dealership","Books: Cthulu\'s A-Bomb-A-Nation guide","Books: Tyranno\'s War on Trilobite\'s Tyranny","Dude\'s Dodecahedron","Duke\'s Dudekahedron","Scientific Equipment","Server Equipment"],
     "logisticTypes":["parcel"],
     "slots":[1,2,3,4],
     "cargoType":"parcel",
@@ -268,7 +268,7 @@
     "modChance":{"fragile":0.1, "timed":0.35},
   },
   "carCrushingGoods": {
-    "names":["Raw Materials","Tungsten Drill Bits","Sheet Metal","Fossilised Rocks","Nibbler's Excreted Dark Matter","Transformer Core"],
+    "names":["Raw Materials","Tungsten Drill Bits","Sheet Metal","Fossilised Rocks","Nibbler\'s Excreted Dark Matter","Transformer Core"],
     "logisticTypes":["industrial"],
     "slots":[64,78,96,100,114,128],
     "cargoType":"parcel",
@@ -281,7 +281,7 @@
     "modChance":{"timed":0.55},
   },
   "miscFoodSupplies": {
-    "names":["Rare Fish","Fish Roe","Whale Meat","Live Octopus","Ground Poultry","HALAL-Approved Alternative Beef","Goat Meat","'Still Man's Best Friend - 'But Only Quieter'","Meat-cubator","Henry's 'I'm Feeling Quite Hungry Now - Game Hunting Guides'","Granger Eggs","Fish Balls","Calimari","Aussie King Prawns","USA Shrimps","Blue Lobster","Swan River Jellyfish","Kangaroo Meat","Alternative Chicken Meat","Fake Meat","Good Food","God Food","UFO Diner's Special Meatballs","Granular Winery Bottles","Nobility Special Oyster","Sea Cucumbers","Ocean Bottom Feeding Pillbug","Nautilus","Flying Squid"],
+    "names":["Rare Fish","Fish Roe","Whale Meat","Live Octopus","Ground Poultry","HALAL-Approved Alternative Beef","Goat Meat","\'Still Man\'s Best Friend - \'But Only Quieter\'","Meat-cubator","Henry\'s \'I\'m Feeling Quite Hungry Now - Game Hunting Guides\'","Granger Eggs","Fish Balls","Calimari","Aussie King Prawns","USA Shrimps","Blue Lobster","Swan River Jellyfish","Kangaroo Meat","Alternative Chicken Meat","Fake Meat","Good Food","God Food","UFO Diner\'s Special Meatballs","Granular Winery Bottles","Nobility Special Oyster","Sea Cucumbers","Ocean Bottom Feeding Pillbug","Nautilus","Flying Squid"],
     "logisticTypes":["foodSupplies"],
     "slots":50,
     "cargoType":"parcel",
@@ -333,7 +333,7 @@
     "modChance":{"fragile":1, "timed":0.25},
   },
   "waterGoods": {
-    "names":["750x 1.2L Bottled Wah'er Pallet","750x 1.2L Sparkling Wah'er"],
+    "names":["750x 1.2L Bottled Wah\'er Pallet","750x 1.2L Sparkling Wah\'er"],
     "logisticTypes":["foodSupplies"],
     "slots":128,
     "cargoType":"parcel",
@@ -346,7 +346,7 @@
     "modChance":{"timed":0.15},
   },
   "colaGoods": {
-    "names":["2400x 375mL Tasti-Cola Pallet","750x 1.2L Tasti-Cola Pallet","750x 1.2L Tasti-Soda Pallet","750x 1.2L Bottled Wah'er Pallet","Pallet of 225x4L Milk Jugs","750x 1.2L Fizzo-Yoghy Drink"],
+    "names":["2400x 375mL Tasti-Cola Pallet","750x 1.2L Tasti-Cola Pallet","750x 1.2L Tasti-Soda Pallet","750x 1.2L Bottled Wah\'er Pallet","Pallet of 225x4L Milk Jugs","750x 1.2L Fizzo-Yoghy Drink"],
     "logisticTypes":["foodSupplies"],
     "slots":128,
     "cargoType":"parcel",
@@ -359,7 +359,7 @@
     "modChance":{"timed":0.15},
   },
   "colaGoodsLight": {
-    "names":["240x 375mL Tasti-Cola","72x 1.2L Tasti-Cola","72x 1.2L Tasti-Soda","72x 1.2L Bottled Wah'er","48x2L Milk Jugs","240x 375mL Un-Tasti-Cola","240x 375mL Xtra-Tasti-Cola","72x 1.2L Xtra-Tasti-Cola","72x 1.2L Un-Tasti-Soda","72x 1.2L Sparkling Wah'er","72x 1.2L Fizzo-Yoghy Drink","Toilet","Bathtub","Organic Enzymes","Compressed Bio-disposable Cutlery"],
+    "names":["240x 375mL Tasti-Cola","72x 1.2L Tasti-Cola","72x 1.2L Tasti-Soda","72x 1.2L Bottled Wah\'er","48x2L Milk Jugs","240x 375mL Un-Tasti-Cola","240x 375mL Xtra-Tasti-Cola","72x 1.2L Xtra-Tasti-Cola","72x 1.2L Un-Tasti-Soda","72x 1.2L Sparkling Wah\'er","72x 1.2L Fizzo-Yoghy Drink","Toilet","Bathtub","Organic Enzymes","Compressed Bio-disposable Cutlery"],
     "logisticTypes":["foodSupplies"],
     "slots":16,
     "cargoType":"parcel",
@@ -372,7 +372,7 @@
     "modChance":{"timed":0.15},
   },
   "colaGoodsSpecial": {
-    "names":["2400x 375mL Xtra-Tasti-Cola Pallet","750x 1.2L Xtra-Tasti-Cola Pallet","750x 1.2L Un-Tasti-Soda Pallet","750x 1.2L Premo-Wah'er Pallet","Pallet of 750x 1.2L Electrolytic Sports Fluid","Pallet of 225x4L Milk Jugs","Pallet of 225x4L Bleach","Pallet of 225x4L DI Water","Spearleaf Beer Kegs","Margret River Wines"],
+    "names":["2400x 375mL Xtra-Tasti-Cola Pallet","750x 1.2L Xtra-Tasti-Cola Pallet","750x 1.2L Un-Tasti-Soda Pallet","750x 1.2L Premo-Wah\'er Pallet","Pallet of 750x 1.2L Electrolytic Sports Fluid","Pallet of 225x4L Milk Jugs","Pallet of 225x4L Bleach","Pallet of 225x4L DI Water","Spearleaf Beer Kegs","Margret River Wines"],
     "logisticTypes":["foodSupplies"],
     "slots":128,
     "cargoType":"parcel",
@@ -385,7 +385,7 @@
     "modChance":{"timed":0.35},
   },
   "6PackSpecial": {
-    "names":["18x 375mL Xtra-Tasti-Cola Pallet","6 pack 1.2L Xtra-Tasti-Cola Pallet","6 Pack 1.2L Un-Tasti-Soda Pallet","6 Pack 1.2L Premo-Wah'er Pallet","6 Pack 1.2L Electrolytic Sports Fluid","4x 1.8L Milk Jugs","4x 1.8L Bleach","Spearleaf Beer Keg","4x Margret River Wine","BeamLing Was Here 6-Pack Set"],
+    "names":["18x 375mL Xtra-Tasti-Cola Pallet","6 pack 1.2L Xtra-Tasti-Cola Pallet","6 Pack 1.2L Un-Tasti-Soda Pallet","6 Pack 1.2L Premo-Wah\'er Pallet","6 Pack 1.2L Electrolytic Sports Fluid","4x 1.8L Milk Jugs","4x 1.8L Bleach","Spearleaf Beer Keg","4x Margret River Wine","BeamLing Was Here 6-Pack Set"],
     "logisticTypes":["foodSupplies"],
     "slots":2,
     "cargoType":"parcel",
@@ -608,7 +608,7 @@
   "ExpressLimitedMedium": {
     "names":["Same-Day Express Delivery Parcel (M)"],
     "logisticTypes":["parcel"],
-    "slots":[2,3,4],
+    "slots":[2,2,2,3,3,3,3,3,3,4,4,4,5,5,5,6,6,6,6,6,7,8,8,8,9,10,11,12,13,14,15,16],
     "cargoType":"parcel",
     "rarity":1.5,
     "worth":3.8,
@@ -621,7 +621,7 @@
   "ExpressLimitedLarge": {
     "names":["Same-Day Express Delivery Parcel (Large)"],
     "logisticTypes":["parcel"],
-    "slots":[3,4,4,4,5,5,5,6,6,6,6,6,7,8,8,8,9,10,11,12,13,14,15,16],
+    "slots":[7,8,9,10,11,12,13,14,15,16],
     "cargoType":"parcel",
     "rarity":1.5,
     "worth":3.6,
@@ -631,7 +631,7 @@
     "weight":[8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23],
     "modChance":{"timed":1},
   },
-  "ExpressLimitedVeryLarge": {
+  "ExpressLimitedHeavy": {
     "names":["Same-Day Express Delivery Parcel (Heavy)"],
     "logisticTypes":["parcel"],
     "slots":[6,7,8,9,10,11,12,13,14,15,16,17,18,20,22,24,26,28,30,32],
