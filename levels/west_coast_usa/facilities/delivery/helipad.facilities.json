@@ -3,8 +3,8 @@
     {
       "id":"hospitalHelipad",
       "name":"Hospital Helicopter Rooftop",
-      "description":"Receives and sends essential goods for the hospital and surrounding emergency services. You can\'t get here without an aircraft, at least not the normal way.",
-      "preview":"previews/hospital.jpg",
+      "description":"Receives and sends essential goods for the hospital and surrounding emergency services. You can't get here without an aircraft, at least not the normal way.",
+      "preview":"previews/hospitalHelicopterPad.PNG",
       "pickUpSpotNames":["hospital_helipad_walkway"],
       "dropOffSpotNames":["hospital_helipad"],
       "sitesFile":"helipad.sites.json",
@@ -47,5 +47,38 @@
         }
 	  ]
     }
-  ]
+  ],
+  /*
+  "garages":[
+    {
+      "id":"hospitalHelicopterLandingZone",
+      "name":"Hospital Helicopter Landing Zone",
+      "description":"Helicopter Landing Pad - I don't advise you tow your truck here as I'm sure the doctors won't appreciate it.",
+      "preview":"previews/hospitalHelicopterPad.PNG",
+      "zoneNames":["HospitalHelicopterLandingPad"],
+      "parkingSpotNames":["hospital_helipad", "hospital_helipad_walkway"],
+      "icon":"poi_garage_2_round"
+      "tags":["Helicopter","VTOL","Vertical Lift Aircraft","Aircraft"]
+    }
+  ],
+  "computers":[
+    {
+      "id":"servicestationGarageComputer",
+      "name":"Garage Computer",
+      "description":"Vehicle Management Hub - Use this computer to manage vehicle and parts inventory, vehicle tuning, and more!",
+      "preview":"servicestationgaragecomputer.jpg",
+      "doors":[["servicestationGarageComputer_area_1","servicestationGarageComputer_icon_1"]],
+      "screens":["servicestationGarageComputer_screen_1"],
+      "functions": {"painting":true, "tuning":true, "vehicleInventory":true, "vehicleShop":true, "partShop":true, "partInventory":true, "insurancePolicies":true},
+      "activityAcceptProps":[
+        {"keyLabel":"Vehicle & Parts Management"},
+        {"keyLabel":"Vehicle & Parts Shopping"},
+        {"keyLabel":"Insurance Management"},
+      ],
+      "iconOffsetHeight":0.15,
+      "iconLift":0.2,
+      "icon":"poi_laptop_round"
+    },
+  ],
+  */
 }

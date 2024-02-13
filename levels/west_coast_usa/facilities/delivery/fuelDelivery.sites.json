@@ -20,12 +20,12 @@
           "name":"string"
         },
         "values":{
-          "name":"near Rich\'s Motor Prestige Auto"
+          "name":"near Rich's Motor Prestige Auto"
         }
       },
       "isMultiSpot":false,
       "name":"trilobiteFuelDropOff1",
-      "oldId":1961,
+      "oldId":28,
       "pos":[
         -807.8447266,
         861.5998535,
@@ -67,7 +67,7 @@
       },
       "isMultiSpot":false,
       "name":"tyrannosFuelDropOffSpearLeafLogistics",
-      "oldId":1962,
+      "oldId":29,
       "pos":[
         136.825882,
         1745.953613,
@@ -109,7 +109,7 @@
       },
       "isMultiSpot":false,
       "name":"trilobiteFuelDropOffNearBelascoGarage",
-      "oldId":1964,
+      "oldId":30,
       "pos":[
         898.0643921,
         -480.5671387,
@@ -151,7 +151,7 @@
       },
       "isMultiSpot":false,
       "name":"nodeolineFuelDropOffNearTurboBurger",
-      "oldId":1965,
+      "oldId":31,
       "pos":[
         -485.8844604,
         142.8346863,
@@ -193,7 +193,7 @@
       },
       "isMultiSpot":false,
       "name":"refineryFuelPickupSpot",
-      "oldId":1967,
+      "oldId":32,
       "pos":[
         -650.7362061,
         1905.865845,
@@ -208,6 +208,48 @@
       "scl":[
         5.896267891,
         12.25800626,
+        3
+      ],
+      "spotAmount":1,
+      "spotDirection":"Left",
+      "spotOffset":0,
+      "spotRotation":0
+    },
+    {
+      "color":[
+        1,
+        1,
+        1
+      ],
+      "customFields":{
+        "names":[
+          "name"
+        ],
+        "tags":{},
+        "types":{
+          "name":"string"
+        },
+        "values":{
+          "name":"near Office Complex"
+        }
+      },
+      "isMultiSpot":false,
+      "name":"apexNearOffices",
+      "oldId":33,
+      "pos":[
+        -190.8736115,
+        515.9648438,
+        74.85037994
+      ],
+      "rot":[
+        1.56811892e-05,
+        1.573945726e-05,
+        -0.708416858,
+        0.7057942723
+      ],
+      "scl":[
+        8.487630085,
+        10.78183623,
         3
       ],
       "spotAmount":1,

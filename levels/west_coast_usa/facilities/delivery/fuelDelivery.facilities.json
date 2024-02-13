@@ -6,7 +6,7 @@
 		"id":"refineryFuelPickupSpotFacility",
 		"name":"Spearleaf Refinery",
 		"description":"Provides Fuel for tankers",
-		"preview":"previews/untitled.PNG",
+		"preview":"previews/spawns_refinery.jpg",
 		"pickUpSpotNames":["refineryFuelPickupSpot"],
 		"dropOffSpotNames":["refineryFuelPickupSpot"],
 		"sitesFile":"fuelDelivery.sites.json",
@@ -25,10 +25,10 @@
 		  "interval":20
 		}, {
 		  "type":"receiver",
-		  "logisticTypes":["parcel"],
+		  "logisticTypes":["mechanicalParts"],
 		  "min":0,
 		  "max":1,
-		  "interval":120
+		  "interval":300
 		},
 		],
     },
@@ -37,14 +37,14 @@
 		"id":"trilobiteFuelDropOffRichesMotorFacility",
 		"name":"Trilobite Servo",
 		"description":"Receives fuel and food supplies. Sends occasional food when certain citizens want a change from China Town.",
-		"preview":"previews/untitled.PNG",
+		"preview":"previews/fuel_trilobite_city.jpg",
 		"pickUpSpotNames":["trilobiteFuelDropOff1"],
 		"dropOffSpotNames":["trilobiteFuelDropOff1"],
 		"sitesFile":"fuelDelivery.sites.json",
 		"showIncomingCargo":true,
-		"logisticTypesProvided":[],
-		"logisticTypesReceived":["petroleum_careerMode"],
-		"logisticMaxItems":1,
+		"logisticTypesProvided":["food"],
+		"logisticTypesReceived":["foodSupplies","petroleum_careerMode","shopSupplies"],
+		"logisticMaxItems":3,
 		"unlockCondition":{"type":"minItemCount","target":1},
 		"logisticGenerators":[
 		{
@@ -53,11 +53,20 @@
 		  "min":-3,
 		  "max":1,
 		  "slotsMax":8,
-		  "interval":20
+		  "interval":120
 		},
 		{
 		  "type":"receiver",
-		  "logisticTypes":["foodSupplies","petroleum_careerMode"],
+		  "logisticTypes":["petroleum_careerMode"],
+		  "min":0,
+		  "max":5,
+		  "slotsMax":15,
+		  "interval":300
+		},
+		
+		{
+		  "type":"receiver",
+		  "logisticTypes":["foodSupplies"],
 		  "min":-5,
 		  "max":1,
 		  "slotsMax":3,
@@ -77,12 +86,12 @@
 		"id":"nodeolineFacilityCareerMode",
 		"name":"Nodeoline Servo",
 		"description":"Receives fuel and food supplies. Sends occasional food when certain citizens want a change from TurboBurger.",
-		"preview":"previews/untitled.PNG",
+		"preview":"previews/fuel_nodeoline.jpg",
 		"pickUpSpotNames":["nodeolineFuelDropOffNearTurboBurger"],
 		"dropOffSpotNames":["nodeolineFuelDropOffNearTurboBurger"],
 		"sitesFile":"fuelDelivery.sites.json",
 		"showIncomingCargo":true,
-		"logisticTypesProvided":[],
+		"logisticTypesProvided":["food"],
 		"logisticTypesReceived":["petroleum_careerMode"],
 		"logisticMaxItems":1,
 		"unlockCondition":{"type":"minItemCount","target":1},
@@ -93,7 +102,7 @@
 		  "min":-3,
 		  "max":1,
 		  "slotsMax":8,
-		  "interval":20
+		  "interval":120
 		},
 		{
 		  "type":"receiver",
@@ -117,12 +126,12 @@
 		"id":"trilobiteFacilityCareerModeBelascoGarage",
 		"name":"Trilobite Quarryside Servo",
 		"description":"Receives fuel and food supplies.",
-		"preview":"previews/spawns_servicestation.jpg",
+		"preview":"previews/fuel_trilobite_garage.jpg",
 		"pickUpSpotNames":["trilobiteFuelDropOffNearBelascoGarage"],
 		"dropOffSpotNames":["trilobiteFuelDropOffNearBelascoGarage"],
 		"sitesFile":"fuelDelivery.sites.json",
 		"showIncomingCargo":true,
-		"logisticTypesProvided":[],
+		"logisticTypesProvided":["food"],
 		"logisticTypesReceived":["petroleum_careerMode"],
 		"logisticMaxItems":1,
 		"unlockCondition":{"type":"minItemCount","target":1},
@@ -133,7 +142,7 @@
 		  "min":-3,
 		  "max":1,
 		  "slotsMax":8,
-		  "interval":20
+		  "interval":120
 		},
 		{
 		  "type":"receiver",
@@ -156,10 +165,49 @@
     {
 		"id":"tyrannosFuelDropOffSpearLeafLogisticsFacility",
 		"name":"Tyrannos Quarryside Servo",
-		"description":"Receives fuel and food supplies. Sends occasional food. No we don\'t provide service for electric vehicles.",
-		"preview":"previews/spawns_refinery.jpg",
+		"description":"Receives fuel and food supplies. Sends occasional food.",
+		"preview":"previews/fuel_tyranos_island.jpg",
 		"pickUpSpotNames":["tyrannosFuelDropOffSpearLeafLogistics"],
 		"dropOffSpotNames":["tyrannosFuelDropOffSpearLeafLogistics"],
+		"sitesFile":"fuelDelivery.sites.json",
+		"showIncomingCargo":true,
+		"logisticTypesProvided":["food"],
+		"logisticTypesReceived":["petroleum_careerMode"],
+		"logisticMaxItems":1,
+		"unlockCondition":{"type":"minItemCount","target":1},
+		"logisticGenerators":[
+		{
+		  "type":"provider",
+		  "logisticTypes":["food"],
+		  "min":-3,
+		  "max":1,
+		  "slotsMax":8,
+		  "interval":120
+		},
+		{
+		  "type":"receiver",
+		  "logisticTypes":["foodSupplies","petroleum_careerMode"],
+		  "min":-3,
+		  "max":3,
+		  "interval":300
+		},
+		{
+		  "type":"receiver",
+		  "logisticTypes":["shopSupplies","parcel"],
+		  "min":-5,
+		  "max":1,
+		  "slotsMax":1,
+		  "interval":300
+		},
+		],
+    },
+    {
+		"id":"ApexFuelServoNearOffices",
+		"name":"Apex Servo",
+		"description":"Receives fuel and food supplies. Sends occasional food.",
+		"preview":"previews/spawns_refinery.jpg",
+		"pickUpSpotNames":["apexNearOffices"],
+		"dropOffSpotNames":["apexNearOffices"],
 		"sitesFile":"fuelDelivery.sites.json",
 		"showIncomingCargo":true,
 		"logisticTypesProvided":["food"],
@@ -180,7 +228,7 @@
 		  "logisticTypes":["foodSupplies","petroleum_careerMode"],
 		  "min":-5,
 		  "max":1,
-		  "interval":3//debug
+		  "interval":300
 		},
 		{
 		  "type":"receiver",

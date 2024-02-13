@@ -194,5 +194,18 @@
     "offerDuration": 360,
     "weight": [1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16],
     "modChance": { "timed": 1,"fragile":0 }
+  },
+  "hospitalFood": {
+    "names": ["Surplus Hospital Food"],
+    "logisticTypes": ["food"],
+    "slots": [4],
+    "cargoType": "parcel",
+    "rarity": 5,
+    "worth": 1,
+    "generationChance": 0.1,
+    "duplicationChance": [1],
+    "offerDuration": 360,
+    "weight": [8],
+    "modChance": { "timed": 0.3,"fragile":0 }
   }
 }

@@ -1,4 +1,111 @@
 {
+	/*
+	"garages":[
+    {
+      "id":"customGarage",
+      "name":"Custom Garage",
+      "description":"Commercial vehicle garage, transport trucks, heavy machinery, buses, large vans, trailers, and more.",
+      "preview":"garage_servicestation.jpg",
+      "zoneNames":["commercialGarage1"],
+      "parkingSpotNames":["commercialGarageParking1", "commercialGarageParking2", "commercialGarageParkingOutside1", "commercialGarageParkingOutside2", "commercialGarageParkingOutside3", "commercialGarageParkingOutside4"],
+      "icon":"poi_garage_2_round",
+      "tags":["truck"]
+    }],
+	"gasStations":[
+    {
+      "id":"trilobite_garage",
+      "name":"levels.west_coast_usa.gasStationPoints.trilobite_garage",
+      "description":"levels.west_coast_usa.gasStationPoints.trilobite_garage.description",
+      "preview":"fuel_trilobite_garage.jpg",
+      "energyTypes":["gasoline","diesel","unknown"],
+      "pumps":[
+        ["fuel_trilobite_garage_pump_area_1", "fuel_trilobite_garage_pump_icon_1"],
+        ["fuel_trilobite_garage_pump_area_2", "fuel_trilobite_garage_pump_icon_2"],
+      ],
+      "prices":{
+        "gasoline":{
+          "priceBaseline": 1.37,
+          "priceRandomnessGain": 0.100,
+          "priceRandomnessBias": 0.2,
+          "us_9_10_tax":true,
+          "displayObjects":[
+            ["trilobite_garage_sign_A1_1","trilobite_garage_sign_B1_1"],
+            ["trilobite_garage_sign_A1_2","trilobite_garage_sign_B1_2"],
+          ]
+        },
+        "diesel":{
+          "priceBaseline": 1.53,
+          "us_9_10_tax":true,
+          "displayObjects":[
+            ["trilobite_garage_sign_A4_1","trilobite_garage_sign_B4_1"],
+            ["trilobite_garage_sign_A4_2","trilobite_garage_sign_B4_2"],
+          ]
+        }
+      }
+	  {
+      "id":"tyranos_island_KEVee",
+      "name":"levels.west_coast_usa.gasStationPoints.tyranos_island_KEVee",
+      "description":"levels.west_coast_usa.gasStationPoints.tyranos_island_KEVee.description",
+      "preview":"fuel_tyranos_island.jpg",
+      "energyTypes":["electricEnergy"],
+      "pumps":[
+        ["fuel_tyranos_island_KEVee_pump_area_1", "fuel_tyranos_island_KEVee_pump_icon_1"],
+        ["fuel_tyranos_island_KEVee_pump_area_2", "fuel_tyranos_island_KEVee_pump_icon_2"],
+        ["fuel_tyranos_island_KEVee_pump_area_3", "fuel_tyranos_island_KEVee_pump_icon_3"],
+        ["fuel_tyranos_island_KEVee_pump_area_4", "fuel_tyranos_island_KEVee_pump_icon_4"]
+      ],
+      "prices":{
+        "electricEnergy":{
+          "priceBaseline": 0.7
+        }
+      }
+    }],
+  */
+  /*
+  	"garages":[
+    {
+      "id":"NC_easyAutoRepairGarage",
+      "name":"Easy Auto Repair",
+      "description":"Small vehicle repair garage by the highway except they're out of resources at the moment.",
+      "preview":"garage_servicestation.jpg",
+      "zoneNames":["NC_EasyAutoRepairZone"],
+      "parkingSpotNames":["EasyAutoRepairCarPark1","EasyAutoRepairGarage1","EasyAutoRepairCommercialPark1","EasyAutoRepairCommercialPark2","EasyAutoRepairCommercialPark3","EasyAutoRepairCommercialPark4"],
+      "icon":"poi_garage_2_round",
+      "tags":["truck"]
+    },
+    {
+      "id":"NC_FastAutomotive",
+      "name":"Fast Automotive",
+      "description":"Small vehicle repair garage at the tracks. They've got no time for your vehicle at the moment unfortunately.",
+      "preview":"garage_servicestation.jpg",
+      "zoneNames":["NC_EasyAutoRepairZone"],
+      "parkingSpotNames":["EasyAutoRepairCarPark1","EasyAutoRepairGarage1","EasyAutoRepairCommercialPark1","EasyAutoRepairCommercialPark2","EasyAutoRepairCommercialPark3","EasyAutoRepairCommercialPark4"],
+      "icon":"poi_garage_2_round"
+    }
+	],
+	*/
+/**
+	"computers":[
+    {
+      "id":"NC_easyAutoRepairGarageComputer",
+      "name":"Easy Auto Repair Services",
+      "description":"We do repairs easy.",
+      "preview":"servicestationgaragecomputer.jpg",
+      "doors":[["EasyAutoRepairGarage1"]],
+      //"screens":["servicestationGarageComputer_screen_1"],//servicestationGarageComputer_screen_1
+      "functions": {"painting":true, "tuning":true, "vehicleInventory":true, "vehicleShop":true, "partShop":true, "partInventory":true, "insurancePolicies":false},
+      "activityAcceptProps":[
+        {"keyLabel":"Vehicle & Parts Management"},
+        {"keyLabel":"Vehicle & Parts Shopping"},
+        {"keyLabel":"Insurance Management"},
+      ],
+	  
+      //"iconOffsetHeight":0.15,
+      //"iconLift":0.2,
+      //"icon":"poi_laptop_round"
+	  
+    }]
+	*/
   "deliveryProviders":[
 //RACEWAY
     {
@@ -585,7 +692,7 @@
 		"id":"PigeonHouseTwin",
 		"name":"Pigeon\'s Twin House",
 		"description":"Random people ordering junk food and occasional emergency aid, maybe sends something once in a blue moon. Did you remember your first Pigeon delivery?",
-		"preview":"previews/pigeon.jpg",
+		"preview":"previews/spawn_beamlr_preview.jpg",//"previews/pigeon.jpg",
 		"pickUpSpotNames":["PigeonHouseTwinLocation"],
 		"dropOffSpotNames":["PigeonHouseTwinLocation"],
 		"sitesFile":"newCareer.sites.json",
@@ -671,8 +778,6 @@
 		"showIncomingCargo":true,
 		"logisticTypesProvided":[],
 		"logisticTypesReceived":["parcel","medicalAid","food","fanMerch"],
-		"unlockCondition":{"type":"minItemCount","target":1},
-        "logisticMaxItems":2,
 		"logisticGenerators":[
 		{
 		  "type":"receiver",
@@ -779,8 +884,6 @@
 		"showIncomingCargo":true,
 		"logisticTypesProvided":[],
 		"logisticTypesReceived":["parcel","medicalAid","food","fanMerch"],
-		"unlockCondition":{"type":"minItemCount","target":1},
-        "logisticMaxItems":3,
 		"logisticGenerators":[
 		{
 		  "type":"receiver",
@@ -819,7 +922,6 @@
       "logisticTypesProvided":[],
       "logisticTypesReceived":["parcel","medicalAid","mechanicalParts","officeSupplies","shopSupplies","food"],
       "logisticMaxItems":2,
-      "unlockCondition":{"type":"minItemCount","target":1},
 	  "logisticGenerators":[
 	    {
           "type":"receiver",
@@ -848,7 +950,6 @@
       "logisticTypesProvided":[],
       "logisticTypesReceived":["parcel","medicalAid","mechanicalParts","officeSupplies","shopSupplies","food"],
       "logisticMaxItems":2,
-      "unlockCondition":{"type":"minItemCount","target":1},
 	  "logisticGenerators":[
 	    {
           "type":"receiver",
@@ -860,7 +961,7 @@
           "type":"receiver",
           "logisticTypes":["food"],
           "min":-1,
-          "max":1,
+          "max":2,
           "interval":120
         }
       ],
@@ -876,9 +977,8 @@
       "sitesFile":"newCareer.sites.json",
       "showIncomingCargo":true,
       "logisticTypesProvided":[],
-      "logisticTypesReceived":["parcel"],
+      "logisticTypesReceived":["parcel","industrial"],
       "logisticMaxItems":3,
-      "unlockCondition":{"type":"minItemCount","target":1},
 	  "logisticGenerators":[
 	    {
           "type":"receiver",
@@ -940,29 +1040,21 @@
       "dropOffSpotNames":["MobileTowerNorth","MobileTowerSite","MobileTower2"],
       "sitesFile":"newCareer.sites.json",
       "showIncomingCargo":true,
-      "logisticTypesProvided":["parcel"],
+      "logisticTypesProvided":[],
       "logisticTypesReceived":["medicalAid","mechanicalParts","food","parcel"],
-      "unlockCondition":{"type":"minItemCount","target":1},
-      "logisticMaxItems":2,
 	  "logisticGenerators":[
 	    {
           "type":"receiver",
           "logisticTypes":["medicalAid","mechanicalParts","parcel"],
-          "min":-3,
+          "min":0,
           "max":1,
-          "interval":120
+          "interval":300
         }, {
           "type":"receiver",
           "logisticTypes":["food"],
-          "min":-2,
+          "min":0,
           "max":1,
           "interval":120
-        }, {
-          "type":"provider",
-          "logisticTypes":["parcel"],
-          "min":-1,
-          "max":1,
-          "interval":300
         }
       ],
     },
@@ -978,7 +1070,6 @@
       "logisticTypesProvided":[],
       "logisticTypesReceived":["parcel"],
       "logisticMaxItems":2,
-      "unlockCondition":{"type":"minItemCount","target":1},
 	  "logisticGenerators":[
 	    {
           "type":"receiver",

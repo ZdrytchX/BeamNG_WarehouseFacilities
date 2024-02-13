@@ -25,7 +25,7 @@
       },
       "isMultiSpot":false,
       "name":"hospital_helipad",
-      "oldId":1910,
+      "oldId":79,
       "pos":[
         -306.5192566,
         445.6552429,
@@ -67,7 +67,7 @@
       },
       "isMultiSpot":false,
       "name":"hospital_helipad_walkway",
-      "oldId":1911,
+      "oldId":80,
       "pos":[
         -317.9532471,
         448.0058594,
@@ -109,7 +109,7 @@
       },
       "isMultiSpot":false,
       "name":"topOfTheWorldSkyScraper",
-      "oldId":1912,
+      "oldId":81,
       "pos":[
         -517.9744873,
         509.2076416,
@@ -145,7 +145,7 @@
       },
       "isMultiSpot":false,
       "name":"ChurchTower",
-      "oldId":1915,
+      "oldId":82,
       "pos":[
         -858.6700439,
         309.1590881,
@@ -168,5 +168,79 @@
       "spotRotation":0
     }
   ],
-  "zones":{}
+  "zones":[
+    {
+      "bot":{
+        "active":false,
+        "normal":[
+          0,
+          0,
+          -1
+        ],
+        "pos":[
+          0,
+          0,
+          -10
+        ]
+      },
+      "color":[
+        1,
+        1,
+        1
+      ],
+      "customFields":{
+        "names":{},
+        "tags":{},
+        "types":{},
+        "values":{}
+      },
+      "name":"HospitalHelicopterLandingPad",
+      "oldId":83,
+      "top":{
+        "active":false,
+        "normal":[
+          0,
+          0,
+          1
+        ],
+        "pos":[
+          0,
+          0,
+          10
+        ]
+      },
+      "vertices":[
+        [
+          -306.4039001,
+          432.6031799,
+          132.5186005
+        ],
+        [
+          -293.4009094,
+          445.653656,
+          132.5186005
+        ],
+        [
+          -306.4760437,
+          458.6349182,
+          132.5185852
+        ],
+        [
+          -315.7212524,
+          449.4161377,
+          132.5186005
+        ],
+        [
+          -317.7574768,
+          451.5651855,
+          132.3190002
+        ],
+        [
+          -321.4172363,
+          447.8097534,
+          132.3190002
+        ]
+      ]
+    }
+  ]
 }
