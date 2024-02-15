@@ -1,5 +1,5 @@
 {
-  "defib": {
+  "nc_defib": {
     "names":["Multi-Use Portable Defibrillator"],
     "logisticTypes":["medicalAid"],
     "slots":[2],
@@ -12,7 +12,7 @@
     "weight":[4],
     "modChance":{"timed":0.7,"fragile":0},
   },
-  "heavyMedicalMachine": {
+  "nc_heavyMedicalMachine": {
     "names":["Anaesthetic Doseage Machine","Magnetic Resonance Imaging Machine"],
     "logisticTypes":["parcel"],
     "slots":[8],
@@ -50,7 +50,7 @@
     "duplicationChance": [1, 0.7, 0.5, 0.3, 0.2],
     "offerDuration": 180,
     "weight": [4],
-    "modChance": { "timed": 0.6 ,"fragile":0}
+    "modChance": { "timed": 0.6 ,"fragile":0},
   },
   "bandagesAndOtherSmallItems": {
     "names": ["Sterile Gauze Bandages", "Elastic Compression Bandages", "pH Analysis Test Strips", "Excretion Dip Tests"],
@@ -63,7 +63,7 @@
     "duplicationChance": [1, 0.7, 0.5, 0.3, 0.2],
     "offerDuration": 180,
     "weight": [1],
-    "modChance": { "timed": 0.6,"fragile":0 }
+    "modChance": { "timed": 0.6,"fragile":0 },
   },
   "antibiotics": {
     "names": ["Broad-Spectrum Antibiotics", "Topical Antibiotic Ointment"],
@@ -76,9 +76,9 @@
     "duplicationChance": [1, 0.7, 0.5, 0.3, 0.2],
     "offerDuration": 240,
     "weight": [1],
-    "modChance": { "timed": 0.5,"fragile":0 }
+    "modChance": { "timed": 0.5,"fragile":0 },
   },
-  "splints": {
+  "bonesplints": {
     "names": ["Fiberglass Arm Splints", "Ankle Stabilizing Splints"],
     "logisticTypes": ["parcel"],
     "slots": [2],
@@ -89,9 +89,9 @@
     "duplicationChance": [1, 0.7, 0.5, 0.3, 0.2],
     "offerDuration": 180,
     "weight": [3],
-    "modChance": { "timed": 0.6,"fragile":0 }
+    "modChance": { "timed": 0.6,"fragile":0 },
   },
-  "painkillers": {
+  "painkillerpills": {
     "names": ["Acetaminophen Tablets", "Ibuprofen Capsules"],
     "logisticTypes": ["parcel"],
     "slots": [1],
@@ -102,9 +102,9 @@
     "duplicationChance": [1, 0.7, 0.5, 0.3, 0.2],
     "offerDuration": 1800,
     "weight": [2],
-    "modChance": { "timed": 0.1,"fragile":0 }
+    "modChance": { "timed": 0.1,"fragile":0 },
   },
-  "surgical_masks": {
+  "nc_surgical_masks": {
     "names": ["Disposable Surgical Masks", "N95 Respirator Masks"],
     "logisticTypes": ["parcel"],
     "slots": [2],
@@ -115,7 +115,7 @@
     "duplicationChance": [1, 0.7, 0.5, 0.3, 0.2],
     "offerDuration": 1240,
     "weight": [3],
-    "modChance": { "timed": 0.5,"fragile":0 }
+    "modChance": { "timed": 0.5,"fragile":0 },
   },
   "medical_gloves": {
     "names": ["Latex Examination Gloves", "Nitrile Medical Gloves"],
@@ -128,7 +128,7 @@
     "duplicationChance": [1, 0.7, 0.5, 0.3, 0.2],
     "offerDuration": 1800,
     "weight": [3],
-    "modChance": { "timed": 0.1,"fragile":0 }
+    "modChance": { "timed": 0.1,"fragile":0 },
   },
   "blood_transfusions": {
     "names": ["O Negative Blood Bags", "AB Positive Plasma"],
@@ -141,7 +141,7 @@
     "duplicationChance": [1, 0.7, 0.5, 0.3, 0.2],
     "offerDuration": 240,
     "weight": [8],
-    "modChance": { "timed": 1,"fragile":0 }
+    "modChance": { "timed": 1,"fragile":0 },
   },
   "organ_transplants": {
     "names": ["Heart for Transplant", "Kidney for Transplant"],
@@ -154,9 +154,9 @@
     "duplicationChance": [1, 0.7, 0.5, 0.3, 0.2],
     "offerDuration": 360,
     "weight": [5],
-    "modChance": { "timed": 0.4,"fragile":0 }
+    "modChance": { "timed": 0.4,"fragile":0 },
   },
-  "emergency_medications": {
+  "nc_emergency_medications": {
     "names": ["Clot-Busting Drugs", "Antivenom Vials"],
     "logisticTypes": ["medicalAid"],
     "slots": [1,2,3,4,5,6],
@@ -167,9 +167,9 @@
     "duplicationChance": [1, 0.7, 0.5, 0.3, 0.2],
     "offerDuration": 240,
     "weight": [1,2,3,4],
-    "modChance": { "timed": 0.5,"fragile":0 }
+    "modChance": { "timed": 0.5,"fragile":0 },
   },
-  "medical_equipment": {
+  "nc_medical_equipment": {
     "names": ["Portable Ultrasound Machine", "Ventilator", "Microscope", "Atomic Absorption Specrum Analyser", "UV-Vis Machine"],
     "logisticTypes": ["medicalAid"],
     "slots": [1,2,2,2,2,3,4],
@@ -180,7 +180,7 @@
     "duplicationChance": [1, 0.7, 0.5, 0.3, 0.2],
     "offerDuration": 180,
     "weight": [3,4,5,6,7,8],
-    "modChance": { "timed": 0.6,"fragile":0 }
+    "modChance": { "timed": 0.6,"fragile":0 },
   },
   "specialized_medical_kits": {
     "names": ["Emergency Medical Response Kit", "Trauma Kit"],
@@ -193,9 +193,9 @@
     "duplicationChance": [1],
     "offerDuration": 360,
     "weight": [1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16],
-    "modChance": { "timed": 1,"fragile":0 }
+    "modChance": { "timed": 1,"fragile":0 },
   },
-  "hospitalFood": {
+  "nc_hospitalFood": {
     "names": ["Surplus Hospital Food"],
     "logisticTypes": ["food"],
     "slots": [4],
@@ -206,6 +206,6 @@
     "duplicationChance": [1],
     "offerDuration": 360,
     "weight": [8],
-    "modChance": { "timed": 0.3,"fragile":0 }
-  }
+    "modChance": { "timed": 0.3,"fragile":0 },
+  },
 }

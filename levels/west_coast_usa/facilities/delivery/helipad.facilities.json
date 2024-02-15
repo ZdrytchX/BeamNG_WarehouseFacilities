@@ -1,7 +1,7 @@
 {
   "deliveryProviders":[
     {
-      "id":"hospitalHelipad",
+      "id":"hospitalHelipadProvider",
       "name":"Hospital Helicopter Rooftop",
       "description":"Receives and sends essential goods for the hospital and surrounding emergency services. You can't get here without an aircraft, at least not the normal way.",
       "preview":"previews/hospitalHelicopterPad.PNG",
@@ -19,34 +19,34 @@
           "logisticTypes":["medicalAid"],
           "min":-3,
           "max":2,
-          "interval":120
+          "interval":120,
         }, {
           "type":"receiver",
           "logisticTypes":["parcel","food"],
           "min":-5,
           "max":1,
-          "interval":120
+          "interval":120,
         }, {
           "type":"provider",
           "logisticTypes":["food","medicalAid","parcel"],
           "min":-3,
           "max":3,
-          "interval":120
+          "interval":120,
         }, {
           "type":"provider",
           "logisticTypes":["medicalAid"],
           "min":0,
           "max":6,
-          "interval":20
+          "interval":30,
         }, {
           "type":"provider",
           "logisticTypes":["medicalAid","parcel"],
           "min":-3,
           "max":5,
-          "interval":120
-        }
-	  ]
-    }
+          "interval":120,
+        },
+	  ],
+    },
   ],
   /*
   "garages":[
@@ -57,8 +57,8 @@
       "preview":"previews/hospitalHelicopterPad.PNG",
       "zoneNames":["HospitalHelicopterLandingPad"],
       "parkingSpotNames":["hospital_helipad", "hospital_helipad_walkway"],
-      "icon":"poi_garage_2_round"
-      "tags":["Helicopter","VTOL","Vertical Lift Aircraft","Aircraft"]
+      "icon":"poi_garage_2_round",
+      "tags":["Helicopter","VTOL","Vertical Lift Aircraft","Aircraft"],
     }
   ],
   "computers":[
@@ -77,7 +77,7 @@
       ],
       "iconOffsetHeight":0.15,
       "iconLift":0.2,
-      "icon":"poi_laptop_round"
+      "icon":"poi_laptop_round",
     },
   ],
   */

@@ -22,13 +22,13 @@
 		  "min":-2,
 		  "max":1,
 		  "slotsMax":8,
-		  "interval":20
+		  "interval":20,
 		}, {
 		  "type":"receiver",
 		  "logisticTypes":["mechanicalParts"],
 		  "min":0,
 		  "max":1,
-		  "interval":300
+		  "interval":300,
 		},
 		],
     },
@@ -53,7 +53,7 @@
 		  "min":-3,
 		  "max":1,
 		  "slotsMax":8,
-		  "interval":120
+		  "interval":120,
 		},
 		{
 		  "type":"receiver",
@@ -61,7 +61,7 @@
 		  "min":0,
 		  "max":5,
 		  "slotsMax":15,
-		  "interval":300
+		  "interval":300,
 		},
 		
 		{
@@ -70,7 +70,7 @@
 		  "min":-5,
 		  "max":1,
 		  "slotsMax":3,
-		  "interval":300
+		  "interval":300,
 		},
 		{
 		  "type":"receiver",
@@ -78,7 +78,7 @@
 		  "min":-5,
 		  "max":1,
 		  "slotsMax":1,
-		  "interval":300
+		  "interval":300,
 		},
 		],
     },
@@ -102,7 +102,7 @@
 		  "min":-3,
 		  "max":1,
 		  "slotsMax":8,
-		  "interval":120
+		  "interval":120,
 		},
 		{
 		  "type":"receiver",
@@ -110,7 +110,7 @@
 		  "min":-5,
 		  "max":1,
 		  "slotsMax":3,
-		  "interval":300
+		  "interval":300,
 		},
 		{
 		  "type":"receiver",
@@ -118,7 +118,7 @@
 		  "min":-5,
 		  "max":1,
 		  "slotsMax":1,
-		  "interval":300
+		  "interval":300,
 		},
 		],
     },
@@ -142,7 +142,7 @@
 		  "min":-3,
 		  "max":1,
 		  "slotsMax":8,
-		  "interval":120
+		  "interval":120,
 		},
 		{
 		  "type":"receiver",
@@ -150,7 +150,7 @@
 		  "min":-5,
 		  "max":1,
 		  "slotsMax":3,
-		  "interval":300
+		  "interval":300,
 		},
 		{
 		  "type":"receiver",
@@ -158,7 +158,7 @@
 		  "min":-5,
 		  "max":1,
 		  "slotsMax":1,
-		  "interval":300
+		  "interval":300,
 		},
 		],
     },
@@ -182,14 +182,14 @@
 		  "min":-3,
 		  "max":1,
 		  "slotsMax":8,
-		  "interval":120
+		  "interval":120,
 		},
 		{
 		  "type":"receiver",
 		  "logisticTypes":["foodSupplies","petroleum_careerMode"],
 		  "min":-3,
 		  "max":3,
-		  "interval":300
+		  "interval":300,
 		},
 		{
 		  "type":"receiver",
@@ -197,7 +197,7 @@
 		  "min":-5,
 		  "max":1,
 		  "slotsMax":1,
-		  "interval":300
+		  "interval":300,
 		},
 		],
     },
@@ -221,14 +221,14 @@
 		  "min":-3,
 		  "max":1,
 		  "slotsMax":8,
-		  "interval":20
+		  "interval":20,
 		},
 		{
 		  "type":"receiver",
 		  "logisticTypes":["foodSupplies","petroleum_careerMode"],
 		  "min":-5,
 		  "max":1,
-		  "interval":300
+		  "interval":300,
 		},
 		{
 		  "type":"receiver",
@@ -236,7 +236,7 @@
 		  "min":-5,
 		  "max":1,
 		  "slotsMax":1,
-		  "interval":300
+		  "interval":300,
 		},
 		],
     },
