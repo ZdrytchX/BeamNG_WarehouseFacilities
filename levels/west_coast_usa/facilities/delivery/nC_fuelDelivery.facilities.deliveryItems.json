@@ -1,0 +1,157 @@
+{
+  "nC_petroleum_careerMode_1000L": {
+    "names": [
+      "1000L Petroleum"
+    ],
+    "logisticTypes": [
+      "petroleum_careerMode"
+    ],
+    "slots": [
+      1000
+    ],
+    "cargoType": "liquidFuelCareer",
+    "rarity": 1,
+    "worth": 0.1,
+    "generationChance": 1,
+    "duplicationChance": [
+      1,
+      0.9,
+      0.8,
+      0.7,
+      0.6,
+      0.5,
+      0.4,
+      0.3,
+      0.2,
+      0.1
+    ],
+    "offerDuration": 900,
+    "weight": [
+      750
+    ],
+    "modChance": {
+      "timed": 0.3,
+      "fragile": 0
+    }
+  },
+  "fud_wich": {
+    "names": [
+      "Fudwich"
+    ],
+    "logisticTypes": [
+      "food"
+    ],
+    "slots": [
+      1
+    ],
+    "cargoType": "parcel",
+    "rarity": 1,
+    "worth": 1,
+    "generationChance": 1,
+    "duplicationChance": [
+      1,
+      0.9,
+      0.8,
+      0.7,
+      0.6,
+      0.5,
+      0.4,
+      0.3,
+      0.2,
+      0.1
+    ],
+    "offerDuration": 90,
+    "weight": [
+      1
+    ],
+    "modChance": {
+      "timed": 0.3,
+      "fragile": 0
+    }
+  },
+  "fudSup_partyPies": {
+    "names": [
+      "Box of Party Pies"
+    ],
+    "logisticTypes": [
+      "foodSupplies"
+    ],
+    "slots": [
+      4
+    ],
+    "cargoType": "parcel",
+    "rarity": 1,
+    "worth": 1,
+    "generationChance": 1,
+    "duplicationChance": [
+      1,
+      0.7,
+      0.5,
+      0.3,
+      0.1
+    ],
+    "offerDuration": 90,
+    "weight": [
+      8
+    ],
+    "modChance": {
+      "timed": 0.7,
+      "fragile": 0
+    }
+  },
+  "fudShop_mechSupplies": {
+    "names": [
+      "Portable Jack"
+    ],
+    "logisticTypes": [
+      "mechanicalParts"
+    ],
+    "slots": [
+      4
+    ],
+    "cargoType": "parcel",
+    "rarity": 1,
+    "worth": 0.8,
+    "generationChance": 1,
+    "duplicationChance": [
+      1,
+      0.5
+    ],
+    "offerDuration": 600,
+    "weight": [
+      8
+    ],
+    "modChance": {
+      "timed": 0.3,
+      "fragile": 0
+    }
+  },
+  "fudShop_shopSuppShelf": {
+    "names": [
+      "Shelf"
+    ],
+    "logisticTypes": [
+      "shopSupplies"
+    ],
+    "slots": [
+      8
+    ],
+    "cargoType": "parcel",
+    "rarity": 1,
+    "worth": 1,
+    "generationChance": 0.3,
+    "duplicationChance": [
+      1,
+      0.6,
+      0.3
+    ],
+    "offerDuration": 600,
+    "weight": [
+      8
+    ],
+    "modChance": {
+      "timed": 0.3,
+      "fragile": 0
+    }
+  }
+}

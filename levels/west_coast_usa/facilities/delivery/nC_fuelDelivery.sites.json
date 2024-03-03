@@ -1,0 +1,262 @@
+{
+  "description": "Description of these Sites. Contains Locations, Zones, and Parking Spots.",
+  "dir": "/levels/west_coast_usa/facilities/delivery/",
+  "filename": "fuelDelivery.sites.json",
+  "locations": {},
+  "name": "fuelDelivery.sites.json",
+  "parkingSpots": [
+    {
+      "color": [
+        1,
+        1,
+        1
+      ],
+      "customFields": {
+        "names": [
+          "name"
+        ],
+        "tags": {},
+        "types": {
+          "name": "string"
+        },
+        "values": {
+          "name": "near Rich's Motor Prestige Auto"
+        }
+      },
+      "isMultiSpot": false,
+      "name": "nC_trilobiteFuelDropOff1",
+      "oldId": 28,
+      "pos": [
+        -807.8447266,
+        861.5998535,
+        74.88499451
+      ],
+      "rot": [
+        0.0007321521333,
+        0.0007301224854,
+        -0.7061242541,
+        0.70808719
+      ],
+      "scl": [
+        3.400000095,
+        12,
+        3
+      ],
+      "spotAmount": 1,
+      "spotDirection": "Left",
+      "spotOffset": 0,
+      "spotRotation": 0
+    },
+    {
+      "color": [
+        1,
+        1,
+        1
+      ],
+      "customFields": {
+        "names": [
+          "name"
+        ],
+        "tags": {},
+        "types": {
+          "name": "string"
+        },
+        "values": {
+          "name": "near Spearleaf Marine Logistics"
+        }
+      },
+      "isMultiSpot": false,
+      "name": "tyrannosFuelDropOffSpearLeafLogistics",
+      "oldId": 29,
+      "pos": [
+        136.825882,
+        1745.953613,
+        101.7706528
+      ],
+      "rot": [
+        -0.02802086808,
+        -0.004188480321,
+        -0.1463153809,
+        0.9888322949
+      ],
+      "scl": [
+        6.069433451,
+        12.68061068,
+        3.034716725
+      ],
+      "spotAmount": 1,
+      "spotDirection": "Left",
+      "spotOffset": 0,
+      "spotRotation": 0
+    },
+    {
+      "color": [
+        1,
+        1,
+        1
+      ],
+      "customFields": {
+        "names": [
+          "name"
+        ],
+        "tags": {},
+        "types": {
+          "name": "string"
+        },
+        "values": {
+          "name": "near Belasco City Garage"
+        }
+      },
+      "isMultiSpot": false,
+      "name": "nC_trilobiteFuelDropOffNearBelascoGarage",
+      "oldId": 30,
+      "pos": [
+        898.0643921,
+        -480.5671387,
+        162.0815735
+      ],
+      "rot": [
+        -0.008450326656,
+        0.006386603044,
+        0.6029141555,
+        0.7977357485
+      ],
+      "scl": [
+        6,
+        11,
+        3
+      ],
+      "spotAmount": 1,
+      "spotDirection": "Left",
+      "spotOffset": 0,
+      "spotRotation": 0
+    },
+    {
+      "color": [
+        1,
+        1,
+        1
+      ],
+      "customFields": {
+        "names": [
+          "name"
+        ],
+        "tags": {},
+        "types": {
+          "name": "string"
+        },
+        "values": {
+          "name": "near Turbo Burger"
+        }
+      },
+      "isMultiSpot": false,
+      "name": "nodeolineFuelDropOffNearTurboBurger",
+      "oldId": 31,
+      "pos": [
+        -485.8844604,
+        142.8346863,
+        100.2752457
+      ],
+      "rot": [
+        4.10420786E-7,
+        3.12762147E-7,
+        -0.6061175129,
+        0.7953751068
+      ],
+      "scl": [
+        2.5,
+        6,
+        3
+      ],
+      "spotAmount": 1,
+      "spotDirection": "Left",
+      "spotOffset": 0,
+      "spotRotation": 0
+    },
+    {
+      "color": [
+        1,
+        1,
+        1
+      ],
+      "customFields": {
+        "names": [
+          "name"
+        ],
+        "tags": {},
+        "types": {
+          "name": "string"
+        },
+        "values": {
+          "name": "Fuel Loadup Spot"
+        }
+      },
+      "isMultiSpot": false,
+      "name": "nC_refineryFuelPickupSpot",
+      "oldId": 32,
+      "pos": [
+        -650.7362061,
+        1905.865845,
+        85.53046417
+      ],
+      "rot": [
+        -0.0004243033464,
+        0.0005282037269,
+        0.7796140202,
+        0.6262599464
+      ],
+      "scl": [
+        5.896267891,
+        12.25800626,
+        3
+      ],
+      "spotAmount": 1,
+      "spotDirection": "Left",
+      "spotOffset": 0,
+      "spotRotation": 0
+    },
+    {
+      "color": [
+        1,
+        1,
+        1
+      ],
+      "customFields": {
+        "names": [
+          "name"
+        ],
+        "tags": {},
+        "types": {
+          "name": "string"
+        },
+        "values": {
+          "name": "near Office Complex"
+        }
+      },
+      "isMultiSpot": false,
+      "name": "nC_apexNearOffices",
+      "oldId": 33,
+      "pos": [
+        -190.8736115,
+        515.9648438,
+        74.85037994
+      ],
+      "rot": [
+        0.0000156811892,
+        0.00001573945726,
+        -0.708416858,
+        0.7057942723
+      ],
+      "scl": [
+        8.487630085,
+        10.78183623,
+        3
+      ],
+      "spotAmount": 1,
+      "spotDirection": "Left",
+      "spotOffset": 0,
+      "spotRotation": 0
+    }
+  ],
+  "zones": {}
+}

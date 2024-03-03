@@ -1,1084 +1,1718 @@
 {
-	/*
-	"garages":[
+  "deliveryProviders": [
     {
-      "id":"customGarage",
-      "name":"Custom Garage",
-      "description":"Commercial vehicle garage, transport trucks, heavy machinery, buses, large vans, trailers, and more.",
-      "preview":"garage_servicestation.jpg",
-      "zoneNames":["commercialGarage1"],
-      "parkingSpotNames":["commercialGarageParking1", "commercialGarageParking2", "commercialGarageParkingOutside1", "commercialGarageParkingOutside2", "commercialGarageParkingOutside3", "commercialGarageParkingOutside4"],
-      "icon":"poi_garage_2_round",
-      "tags":["truck"]
-    }],
-	"gasStations":[
-    {
-      "id":"trilobite_garage",
-      "name":"levels.west_coast_usa.gasStationPoints.trilobite_garage",
-      "description":"levels.west_coast_usa.gasStationPoints.trilobite_garage.description",
-      "preview":"fuel_trilobite_garage.jpg",
-      "energyTypes":["gasoline","diesel","unknown"],
-      "pumps":[
-        ["fuel_trilobite_garage_pump_area_1", "fuel_trilobite_garage_pump_icon_1"],
-        ["fuel_trilobite_garage_pump_area_2", "fuel_trilobite_garage_pump_icon_2"],
+      "id": "NC_racewayCircuitLocation",
+      "name": "Raceway Circuit",
+      "description": "Random people ordering junk food and mechanical parts.",
+      "preview": "previews/untitled.PNG",
+      "dropOffSpotNames": [
+        "nC_RacewaySouthService",
+        "nC_RacewayServicePits",
+        "nC_RaceWatchstandsSouthCorner"
       ],
-      "prices":{
-        "gasoline":{
-          "priceBaseline": 1.37,
-          "priceRandomnessGain": 0.100,
-          "priceRandomnessBias": 0.2,
-          "us_9_10_tax":true,
-          "displayObjects":[
-            ["trilobite_garage_sign_A1_1","trilobite_garage_sign_B1_1"],
-            ["trilobite_garage_sign_A1_2","trilobite_garage_sign_B1_2"],
-          ]
+      "pickUpSpotNames": [
+        "nC_RacewaySouthService",
+        "nC_RacewayServicePits",
+        "nC_RaceWatchstandsSouthCorner"
+      ],
+      "sitesFile": "newCareer.sites.json",
+      "showIncomingCargo": true,
+      "logisticTypesProvided": [
+        "mechanicalParts"
+      ],
+      "logisticTypesReceived": [
+        "parcel",
+        "parcel",
+        "food",
+        "mechanicalParts"
+      ],
+      "unlockCondition": {
+        "type": "minItemCount",
+        "target": 1
+      },
+      "logisticMaxItems": 5,
+      "logisticGenerators": [
+        {
+          "type": "provider",
+          "logisticTypes": [
+            "mechanicalParts"
+          ],
+          "min": -3,
+          "max": 1,
+          "interval": 120
         },
-        "diesel":{
-          "priceBaseline": 1.53,
-          "us_9_10_tax":true,
-          "displayObjects":[
-            ["trilobite_garage_sign_A4_1","trilobite_garage_sign_B4_1"],
-            ["trilobite_garage_sign_A4_2","trilobite_garage_sign_B4_2"],
-          ]
+        {
+          "type": "receiver",
+          "logisticTypes": [
+            "food"
+          ],
+          "min": -1,
+          "max": 3,
+          "interval": 120
+        },
+        {
+          "type": "receiver",
+          "logisticTypes": [
+            "mechanicalParts"
+          ],
+          "min": 0,
+          "max": 5,
+          "interval": 180
+        },
+        {
+          "type": "receiver",
+          "logisticTypes": [
+            "parcel"
+          ],
+          "min": 0,
+          "max": 2,
+          "interval": 300
+        },
+        {
+          "type": "receiver",
+          "logisticTypes": [
+            "parcel"
+          ],
+          "min": 0,
+          "max": 1,
+          "interval": 300
         }
-      }
-	  {
-      "id":"tyranos_island_KEVee",
-      "name":"levels.west_coast_usa.gasStationPoints.tyranos_island_KEVee",
-      "description":"levels.west_coast_usa.gasStationPoints.tyranos_island_KEVee.description",
-      "preview":"fuel_tyranos_island.jpg",
-      "energyTypes":["electricEnergy"],
-      "pumps":[
-        ["fuel_tyranos_island_KEVee_pump_area_1", "fuel_tyranos_island_KEVee_pump_icon_1"],
-        ["fuel_tyranos_island_KEVee_pump_area_2", "fuel_tyranos_island_KEVee_pump_icon_2"],
-        ["fuel_tyranos_island_KEVee_pump_area_3", "fuel_tyranos_island_KEVee_pump_icon_3"],
-        ["fuel_tyranos_island_KEVee_pump_area_4", "fuel_tyranos_island_KEVee_pump_icon_4"]
-      ],
-      "prices":{
-        "electricEnergy":{
-          "priceBaseline": 0.7
-        }
-      }
-    }],
-  */
-  /*
-  	"garages":[
-    {
-      "id":"NC_easyAutoRepairGarage",
-      "name":"Easy Auto Repair",
-      "description":"Small vehicle repair garage by the highway except they're out of resources at the moment.",
-      "preview":"garage_servicestation.jpg",
-      "zoneNames":["NC_EasyAutoRepairZone"],
-      "parkingSpotNames":["EasyAutoRepairCarPark1","EasyAutoRepairGarage1","EasyAutoRepairCommercialPark1","EasyAutoRepairCommercialPark2","EasyAutoRepairCommercialPark3","EasyAutoRepairCommercialPark4"],
-      "icon":"poi_garage_2_round",
-      "tags":["truck"]
+      ]
     },
     {
-      "id":"NC_FastAutomotive",
-      "name":"Fast Automotive",
-      "description":"Small vehicle repair garage at the tracks. They've got no time for your vehicle at the moment unfortunately.",
-      "preview":"garage_servicestation.jpg",
-      "zoneNames":["NC_EasyAutoRepairZone"],
-      "parkingSpotNames":["EasyAutoRepairCarPark1","EasyAutoRepairGarage1","EasyAutoRepairCommercialPark1","EasyAutoRepairCommercialPark2","EasyAutoRepairCommercialPark3","EasyAutoRepairCommercialPark4"],
-      "icon":"poi_garage_2_round"
+      "id": "NC_AdministriationBuilding",
+      "name": "Administration Building",
+      "description": "Random people ordering junk food and office supplies",
+      "preview": "previews/untitled.png",
+      "dropOffSpotNames": [
+        "nC_AdministriationBuildingParking"
+      ],
+      "pickUpSpotNames": [
+        "nC_AdministriationBuildingParking"
+      ],
+      "sitesFile": "newCareer.sites.json",
+      "showIncomingCargo": true,
+      "logisticTypesProvided": [
+        "parcel",
+        "monehDelivery"
+      ],
+      "logisticTypesReceived": [
+        "parcel",
+        "parcel",
+        "food",
+        "officeSupplies",
+        "monehDelivery"
+      ],
+      "logisticMaxItems": 5,
+      "unlockCondition": {
+        "type": "minItemCount",
+        "target": 1
+      },
+      "logisticGenerators": [
+        {
+          "type": "provider",
+          "logisticTypes": [
+            "parcel"
+          ],
+          "min": 0,
+          "max": 1,
+          "interval": 120
+        },
+        {
+          "type": "provider",
+          "logisticTypes": [
+            "monehDelivery"
+          ],
+          "min": 0,
+          "max": 1,
+          "interval": 600
+        },
+        {
+          "type": "receiver",
+          "logisticTypes": [
+            "food"
+          ],
+          "min": 0,
+          "max": 5,
+          "interval": 120
+        },
+        {
+          "type": "receiver",
+          "logisticTypes": [
+            "officeSupplies"
+          ],
+          "min": 0,
+          "max": 1,
+          "interval": 120
+        },
+        {
+          "type": "receiver",
+          "logisticTypes": [
+            "parcel"
+          ],
+          "min": 0,
+          "max": 1,
+          "interval": 300
+        },
+        {
+          "type": "receiver",
+          "logisticTypes": [
+            "parcel"
+          ],
+          "min": 0,
+          "max": 1,
+          "interval": 120
+        }
+      ]
+    },
+    {
+      "id": "NC_TrainStationLocation",
+      "name": "Train Station",
+      "description": "IDK, whatever people do at train stations I guess.",
+      "preview": "previews/untitled.PNG",
+      "dropOffSpotNames": [
+        "TrainStationServiceTunnel"
+      ],
+      "pickUpSpotNames": [
+        "TrainStationBusStop",
+        "TrainStationServiceTunnel"
+      ],
+      "sitesFile": "newCareer.sites.json",
+      "showIncomingCargo": true,
+      "logisticTypesProvided": [
+        "mechanicalParts",
+        "parcel",
+        "monehDelivery"
+      ],
+      "logisticTypesReceived": [
+        "parcel",
+        "parcel",
+        "food",
+        "officeSupplies",
+        "mechanicalParts"
+      ],
+      "logisticMaxItems": 5,
+      "unlockCondition": {
+        "type": "minItemCount",
+        "target": 1
+      },
+      "logisticGenerators": [
+        {
+          "type": "provider",
+          "logisticTypes": [
+            "parcel",
+            "mechanicalParts",
+            "monehDelivery"
+          ],
+          "min": -3,
+          "max": 1,
+          "interval": 120
+        },
+        {
+          "type": "receiver",
+          "logisticTypes": [
+            "food",
+            "mechanicalParts"
+          ],
+          "min": -1,
+          "max": 3,
+          "interval": 120
+        },
+        {
+          "type": "receiver",
+          "logisticTypes": [
+            "parcel",
+            "officeSupplies",
+            "parcel"
+          ],
+          "min": -1,
+          "max": 1,
+          "interval": 120
+        }
+      ]
+    },
+    {
+      "id": "NC_TramwayStationParking",
+      "name": "Tramway Station",
+      "description": "IDK, whatever people do at tram stations I guess.",
+      "preview": "previews/untitled.PNG",
+      "dropOffSpotNames": [
+        "nC_TramwayParking"
+      ],
+      "pickUpSpotNames": [
+        "nC_TramwayParking"
+      ],
+      "sitesFile": "newCareer.sites.json",
+      "showIncomingCargo": true,
+      "logisticTypesProvided": [
+        "mechanicalParts",
+        "parcel",
+        "monehDelivery"
+      ],
+      "logisticTypesReceived": [
+        "parcel",
+        "parcel",
+        "food",
+        "officeSupplies",
+        "mechanicalParts"
+      ],
+      "logisticMaxItems": 5,
+      "unlockCondition": {
+        "type": "minItemCount",
+        "target": 1
+      },
+      "logisticGenerators": [
+        {
+          "type": "provider",
+          "logisticTypes": [
+            "parcel",
+            "mechanicalParts",
+            "monehDelivery"
+          ],
+          "min": -3,
+          "max": 1,
+          "interval": 120
+        },
+        {
+          "type": "receiver",
+          "logisticTypes": [
+            "food",
+            "mechanicalParts"
+          ],
+          "min": -1,
+          "max": 3,
+          "interval": 120
+        },
+        {
+          "type": "receiver",
+          "logisticTypes": [
+            "parcel",
+            "officeSupplies"
+          ],
+          "min": -1,
+          "max": 1,
+          "interval": 120
+        }
+      ]
+    },
+    {
+      "id": "NC_ChinaTownBackAlleyway",
+      "name": "China Town Back Alleyway",
+      "description": "What you doin' here? Do not bring that damn truck here, it won't fit I tell you! Sorry we not sell Chinese-Australian style Honey Chicken.",
+      "preview": "previews/chinatownRestaurant.jpg",
+      "dropOffSpotNames": [
+        "nC_ChinaTownAlleyway"
+      ],
+      "pickUpSpotNames": [
+        "nC_ChinaTownAlleyway"
+      ],
+      "sitesFile": "newCareer.sites.json",
+      "showIncomingCargo": true,
+      "logisticTypesProvided": [
+        "parcel"
+      ],
+      "logisticTypesReceived": [
+        "parcel",
+        "parcel",
+        "food",
+        "officeSupplies",
+        "foodSupplies"
+      ],
+      "logisticMaxItems": 10,
+      "unlockCondition": {
+        "type": "minItemCount",
+        "target": 3
+      },
+      "logisticGenerators": [
+        {
+          "type": "provider",
+          "logisticTypes": [
+            "parcel"
+          ],
+          "min": -3,
+          "max": 3,
+          "interval": 120
+        },
+        {
+          "type": "provider",
+          "logisticTypes": [
+            "food"
+          ],
+          "min": -3,
+          "max": 10,
+          "interval": 60
+        },
+        {
+          "type": "receiver",
+          "logisticTypes": [
+            "foodSupplies"
+          ],
+          "min": -1,
+          "max": 1,
+          "slotsMax": 8,
+          "interval": 180
+        },
+        {
+          "type": "receiver",
+          "logisticTypes": [
+            "officeSupplies",
+            "parcel",
+            "parcel"
+          ],
+          "min": -5,
+          "max": 3,
+          "interval": 120
+        },
+        {
+          "type": "receiver",
+          "logisticTypes": [
+            "parcel"
+          ],
+          "min": -5,
+          "max": 1,
+          "interval": 300
+        }
+      ]
+    },
+    {
+      "id": "NC_fireStationGarage",
+      "name": "Belasco City Fire Station",
+      "description": "So I hear Americans have a thing for calling firemen to remove locks from their chastity belts... Thank Kellog for indirectly unintentionally popularising such a thing",
+      "preview": "previews/untitled.PNG",
+      "pickUpSpotNames": [
+        "nC_BehindFireStation"
+      ],
+      "dropOffSpotNames": [
+        "nC_BehindFireStation"
+      ],
+      "sitesFile": "newCareer.sites.json",
+      "showIncomingCargo": true,
+      "logisticTypesProvided": [],
+      "logisticTypesReceived": [
+        "parcel",
+        "parcel",
+        "food",
+        "officeSupplies",
+        "mechanicalParts"
+      ],
+      "logisticMaxItems": 3,
+      "unlockCondition": {
+        "type": "minItemCount",
+        "target": 1
+      },
+      "logisticGenerators": [
+        {
+          "type": "receiver",
+          "logisticTypes": [
+            "food",
+            "parcel"
+          ],
+          "min": -1,
+          "max": 1,
+          "interval": 120
+        },
+        {
+          "type": "receiver",
+          "logisticTypes": [
+            "officeSupplies"
+          ],
+          "min": -5,
+          "max": 2,
+          "interval": 120
+        },
+        {
+          "type": "receiver",
+          "logisticTypes": [
+            "parcel"
+          ],
+          "min": -5,
+          "max": 1,
+          "interval": 300
+        },
+        {
+          "type": "receiver",
+          "logisticTypes": [
+            "mechanicalParts"
+          ],
+          "min": -2,
+          "max": 2,
+          "interval": 180
+        }
+      ]
+    },
+    {
+      "id": "NC_churchEntranceEntryway",
+      "name": "Belasco City Church",
+      "description": "Don't forget kids, after you bang one job and confess another one out and you're good for heaven's sake! Also virgin sages are a must-have at least until marriage but nobody said anything about a back door-",
+      "preview": "previews/untitled.PNG",
+      "dropOffSpotNames": [
+        "ChurchEntranceDropOff"
+      ],
+      "pickUpSpotNames": [
+        "ChurchEntranceDropOff"
+      ],
+      "sitesFile": "newCareer.sites.json",
+      "showIncomingCargo": true,
+      "logisticTypesProvided": [
+        "food",
+        "parcel"
+      ],
+      "logisticTypesReceived": [
+        "food"
+      ],
+      "logisticMaxItems": 5,
+      "unlockCondition": {
+        "type": "minItemCount",
+        "target": 1
+      },
+      "logisticGenerators": [
+        {
+          "type": "provider",
+          "logisticTypes": [
+            "food"
+          ],
+          "min": -5,
+          "max": 3,
+          "interval": 90
+        },
+        {
+          "type": "receiver",
+          "logisticTypes": [
+            "food"
+          ],
+          "min": -5,
+          "max": 3,
+          "interval": 90
+        },
+        {
+          "type": "provider",
+          "logisticTypes": [
+            "parcel"
+          ],
+          "min": 0,
+          "max": 3,
+          "interval": 180
+        }
+      ]
+    },
+    {
+      "id": "newCareer_lensFlareMovieStudioLoadingDocks",
+      "name": "Lens Flare Movie Studio Loading Docks",
+      "description": "Receives various supplies needed for films. Sends occasional parcels.",
+      "preview": "previews/untitled.PNG",
+      "pickUpSpotNames": [
+        "Career_MovieStudioLoadingDocksA",
+        "Career_MovieStudioLoadingDocksB",
+        "Career_MovieStudioLoadingDocksC",
+        "Career_MovieStudioLoadingDocksD"
+      ],
+      "dropOffSpotNames": [
+        "Career_MovieStudioLoadingDocksB"
+      ],
+      "sitesFile": "newCareer.sites.json",
+      "showIncomingCargo": true,
+      "logisticTypesProvided": [
+        "parcel",
+        "parcel"
+      ],
+      "logisticTypesReceived": [
+        "parcel",
+        "mechanicalParts",
+        "officeSupplies",
+        "industrial",
+        "shopSupplies",
+        "foodSupplies"
+      ],
+      "logisticMaxItems": 10,
+      "unlockCondition": {
+        "type": "minItemCount",
+        "target": 5
+      },
+      "logisticGenerators": [
+        {
+          "type": "provider",
+          "logisticTypes": [
+            "parcel"
+          ],
+          "min": -2,
+          "max": 3,
+          "slotsMax": 8,
+          "interval": 120
+        },
+        {
+          "type": "provider",
+          "logisticTypes": [
+            "parcel"
+          ],
+          "min": 0,
+          "max": 10,
+          "interval": 120
+        }
+      ]
+    },
+    {
+      "id": "newCareer_lensFlareMovieStudioStages",
+      "name": "Lens Flare Movie Studio Filming Area",
+      "description": "Receives various supplies needed for films. Sends occasional parcels.",
+      "preview": "previews/untitled.PNG",
+      "pickUpSpotNames": [
+        "Career_MovieStudioStage1",
+        "Career_MovieStudioStage2",
+        "Career_MovieStudioWaterTower",
+        "Career_MovieStudioStage3LoadingArea",
+        "Career_MovieStudioLandingArea"
+      ],
+      "dropOffSpotNames": [
+        "Career_MovieStudioWaterTower",
+        "Career_MovieStudioLandingArea"
+      ],
+      "sitesFile": "newCareer.sites.json",
+      "showIncomingCargo": true,
+      "logisticTypesProvided": [
+        "parcel",
+        "parcel"
+      ],
+      "logisticTypesReceived": [
+        "parcel",
+        "parcel",
+        "mechanicalParts",
+        "officeSupplies",
+        "shopSupplies",
+        "food"
+      ],
+      "logisticMaxItems": 6,
+      "unlockCondition": {
+        "type": "minItemCount",
+        "target": 3
+      },
+      "logisticGenerators": [
+        {
+          "type": "provider",
+          "logisticTypes": [
+            "parcel"
+          ],
+          "min": -2,
+          "max": 5,
+          "slotsMax": 8,
+          "interval": 60
+        },
+        {
+          "type": "provider",
+          "logisticTypes": [
+            "parcel"
+          ],
+          "min": -3,
+          "max": 1,
+          "slotsMax": 8,
+          "interval": 120
+        },
+        {
+          "type": "receiver",
+          "logisticTypes": [
+            "parcel"
+          ],
+          "min": 0,
+          "max": 3,
+          "interval": 120
+        },
+        {
+          "type": "receiver",
+          "logisticTypes": [
+            "food"
+          ],
+          "min": -1,
+          "max": 3,
+          "interval": 120
+        }
+      ]
+    },
+    {
+      "id": "NC_HotRolledBacksideTruckParking",
+      "name": "Hot Rolled inc.",
+      "description": "So apparently they got lazy at production or something but they finally got around to making stuff.",
+      "preview": "previews/steelFactory.jpg",
+      "pickUpSpotNames": [
+        "nC_HotRolledBackParking",
+        "nC_HotRolledReception"
+      ],
+      "dropOffSpotNames": [
+        "nC_HotRolledBackParking"
+      ],
+      "sitesFile": "newCareer.sites.json",
+      "showIncomingCargo": true,
+      "logisticTypesProvided": [
+        "industrial",
+        "parcel"
+      ],
+      "logisticTypesReceived": [
+        "industrial",
+        "food",
+        "parcel",
+        "parcel",
+        "mechanicalParts"
+      ],
+      "logisticMaxItems": 16,
+      "unlockCondition": {
+        "type": "minItemCount",
+        "target": 2
+      },
+      "logisticGenerators": [
+        {
+          "type": "provider",
+          "logisticTypes": [
+            "parcel"
+          ],
+          "min": -2,
+          "max": 3,
+          "slotsMax": 8,
+          "interval": 120
+        },
+        {
+          "type": "provider",
+          "logisticTypes": [
+            "industrial"
+          ],
+          "min": -3,
+          "max": 5,
+          "interval": 90
+        },
+        {
+          "type": "receiver",
+          "logisticTypes": [
+            "industrial",
+            "mechanicalParts"
+          ],
+          "min": -3,
+          "max": 5,
+          "interval": 90
+        },
+        {
+          "type": "receiver",
+          "logisticTypes": [
+            "food",
+            "parcel",
+            "parcel"
+          ],
+          "min": -5,
+          "max": 2,
+          "interval": 120
+        }
+      ]
+    },
+    {
+      "id": "NC_shuffleboardIslandHeadOffice",
+      "name": "Shuffleboard Logistics and Distribution Head Office",
+      "description": "Ships and receives a small variety of cargo types from the island office near Spearleaf Refinery.",
+      "preview": "previews/spawns_refinery.jpg",
+      "pickUpSpotNames": [
+        "nC_ShuffleboardLogisticsHeadOffice"
+      ],
+      "dropOffSpotNames": [
+        "nC_ShuffleboardLogisticsHeadOffice"
+      ],
+      "sitesFile": "newCareer.sites.json",
+      "showIncomingCargo": true,
+      "logisticTypesProvided": [
+        "parcel",
+        "shopSupplies",
+        "officeSupplies"
+      ],
+      "logisticTypesReceived": [
+        "parcel",
+        "shopSupplies",
+        "officeSupplies",
+        "mechanicalParts",
+        "foodSupplies",
+        "industrial"
+      ],
+      "logisticMaxItems": 10,
+      "unlockCondition": {
+        "type": "minItemCount",
+        "target": 1
+      }
+    },
+    {
+      "id": "NC_refineryIslandStuff",
+      "name": "Spearleaf Refinery",
+      "description": "So where does the dirty oil end up? Maybe that's why the ocean's very blue today",
+      "preview": "previews/spawns_refinery.jpg",
+      "pickUpSpotNames": [
+        "nC_RefineryReception",
+        "nC_RefineryDocksA"
+      ],
+      "dropOffSpotNames": [
+        "nC_RefineryReception",
+        "nC_RefineryDocksA"
+      ],
+      "sitesFile": "newCareer.sites.json",
+      "showIncomingCargo": true,
+      "logisticTypesProvided": [
+        "industrial",
+        "parcel"
+      ],
+      "logisticTypesReceived": [
+        "industrial",
+        "parcel",
+        "mechanicalParts",
+        "parcel"
+      ],
+      "logisticMaxItems": 12,
+      "unlockCondition": {
+        "type": "minItemCount",
+        "target": 1
+      },
+      "logisticGenerators": [
+        {
+          "type": "provider",
+          "logisticTypes": [
+            "parcel"
+          ],
+          "min": -2,
+          "max": 3,
+          "slotsMax": 8,
+          "interval": 120
+        },
+        {
+          "type": "provider",
+          "logisticTypes": [
+            "industrial"
+          ],
+          "min": 0,
+          "max": 8,
+          "slotsMax": 5,
+          "interval": 90
+        },
+        {
+          "type": "receiver",
+          "logisticTypes": [
+            "industrial",
+            "mechanicalParts"
+          ],
+          "min": -1,
+          "max": 5,
+          "interval": 90
+        },
+        {
+          "type": "receiver",
+          "logisticTypes": [
+            "parcel",
+            "parcel"
+          ],
+          "min": -1,
+          "max": 2,
+          "interval": 120
+        }
+      ]
+    },
+    {
+      "id": "NC_ServiceTunnelsUnderCity",
+      "name": "Tunnel",
+      "description": "Some suspicious business is going on in these parts...",
+      "preview": "previews/untitled.PNG",
+      "pickUpSpotNames": [
+        "ServiceTunnelUnderCityRiver",
+        "ServiceTunnelNorthEast"
+      ],
+      "dropOffSpotNames": [
+        "ServiceTunnelUnderCityRiver",
+        "ServiceTunnelNorthEast"
+      ],
+      "sitesFile": "newCareer.sites.json",
+      "showIncomingCargo": true,
+      "logisticTypesProvided": [
+        "monehDelivery",
+        "parcel"
+      ],
+      "logisticTypesReceived": [
+        "parcel"
+      ],
+      "logisticMaxItems": 5,
+      "unlockCondition": {
+        "type": "minItemCount",
+        "target": 1
+      },
+      "logisticGenerators": [
+        {
+          "type": "provider",
+          "logisticTypes": [
+            "parcel"
+          ],
+          "min": -2,
+          "max": 3,
+          "interval": 300
+        },
+        {
+          "type": "receiver",
+          "logisticTypes": [
+            "monehDelivery",
+            "parcel",
+            "parcel"
+          ],
+          "min": 0,
+          "max": 3,
+          "interval": 300
+        }
+      ]
+    },
+    {
+      "id": "NC_touristAttractionsSpots",
+      "name": "Active Attraction Spot",
+      "description": "Random people ordering junk food and occasional emergency aid. Maybe they'll send some postage once in a blue moon",
+      "preview": "previews/untitled.PNG",
+      "pickUpSpotNames": [
+        "nC_tennisCourtsReception",
+        "nC_LighthouseParking"
+      ],
+      "dropOffSpotNames": [
+        "nC_tennisCourtsReception",
+        "nC_LighthouseParking"
+      ],
+      "sitesFile": "newCareer.sites.json",
+      "showIncomingCargo": true,
+      "logisticTypesProvided": [
+        "parcel"
+      ],
+      "logisticTypesReceived": [
+        "parcel",
+        "parcel",
+        "food"
+      ],
+      "unlockCondition": {
+        "type": "minItemCount",
+        "target": 1
+      },
+      "logisticMaxItems": 2,
+      "logisticGenerators": [
+        {
+          "type": "provider",
+          "logisticTypes": [
+            "parcel"
+          ],
+          "min": -5,
+          "max": 1,
+          "interval": 300
+        },
+        {
+          "type": "receiver",
+          "logisticTypes": [
+            "parcel",
+            "parcel",
+            "parcel"
+          ],
+          "min": -5,
+          "max": 1,
+          "interval": 120
+        },
+        {
+          "type": "receiver",
+          "logisticTypes": [
+            "food"
+          ],
+          "min": -5,
+          "max": 5,
+          "interval": 120
+        }
+      ]
+    },
+    {
+      "id": "NC_privateHousesRandom",
+      "name": "Quarry side Forest House",
+      "description": "Random people ordering junk food and occasional emergency aid. Maybe they'll send some postage once in a blue moon",
+      "preview": "previews/untitled.PNG",
+      "pickUpSpotNames": [
+        "QuarrySideForestHouse"
+      ],
+      "dropOffSpotNames": [
+        "QuarrySideForestHouse"
+      ],
+      "sitesFile": "newCareer.sites.json",
+      "showIncomingCargo": true,
+      "logisticTypesProvided": [
+        "parcel",
+        "food"
+      ],
+      "logisticTypesReceived": [
+        "parcel",
+        "parcel",
+        "food"
+      ],
+      "unlockCondition": {
+        "type": "minItemCount",
+        "target": 1
+      },
+      "logisticMaxItems": 2,
+      "logisticGenerators": [
+        {
+          "type": "provider",
+          "logisticTypes": [
+            "parcel"
+          ],
+          "min": -5,
+          "max": 1,
+          "interval": 300
+        },
+        {
+          "type": "provider",
+          "logisticTypes": [
+            "food"
+          ],
+          "min": -3,
+          "max": 1,
+          "interval": 300
+        },
+        {
+          "type": "receiver",
+          "logisticTypes": [
+            "parcel"
+          ],
+          "min": -3,
+          "max": 2,
+          "interval": 120
+        },
+        {
+          "type": "receiver",
+          "logisticTypes": [
+            "parcel"
+          ],
+          "min": -5,
+          "max": 2,
+          "interval": 300
+        },
+        {
+          "type": "receiver",
+          "logisticTypes": [
+            "parcel"
+          ],
+          "min": -1,
+          "max": 1,
+          "interval": 120
+        },
+        {
+          "type": "receiver",
+          "logisticTypes": [
+            "food"
+          ],
+          "min": -1,
+          "max": 2,
+          "interval": 120
+        }
+      ]
+    },
+    {
+      "id": "NC_PigeonHouseTwin",
+      "name": "Pigeon's Twin House",
+      "description": "Random people ordering junk food and occasional emergency aid, maybe sends something once in a blue moon. Did you remember your first Pigeon delivery?",
+      "preview": "previews/spawn_beamlr_preview.jpg",
+      "pickUpSpotNames": [
+        "PigeonHouseTwinLocation"
+      ],
+      "dropOffSpotNames": [
+        "PigeonHouseTwinLocation"
+      ],
+      "sitesFile": "newCareer.sites.json",
+      "showIncomingCargo": true,
+      "logisticTypesProvided": [
+        "parcel",
+        "shopSupplies"
+      ],
+      "logisticTypesReceived": [
+        "parcel",
+        "parcel",
+        "food",
+        "parcel"
+      ],
+      "logisticMaxItems": 2,
+      "unlockCondition": {
+        "type": "minItemCount",
+        "target": 1
+      },
+      "logisticGenerators": [
+        {
+          "type": "provider",
+          "logisticTypes": [
+            "parcel"
+          ],
+          "min": -5,
+          "max": 1,
+          "interval": 300
+        },
+        {
+          "type": "provider",
+          "logisticTypes": [
+            "shopSupplies"
+          ],
+          "min": -10,
+          "max": 1,
+          "interval": 300
+        },
+        {
+          "type": "receiver",
+          "logisticTypes": [
+            "parcel",
+            "parcel",
+            "parcel"
+          ],
+          "min": -5,
+          "max": 1,
+          "interval": 120
+        },
+        {
+          "type": "receiver",
+          "logisticTypes": [
+            "food",
+            "parcel"
+          ],
+          "min": -1,
+          "max": 1,
+          "interval": 120
+        }
+      ]
+    },
+    {
+      "id": "NC_HideAtHomeHouse",
+      "name": "Hide At Home House",
+      "description": "Random people ordering junk food and occasional emergency aid. Occasionally sends suspicious packages. Did you run through the gates from the highway in the getaway?",
+      "preview": "previews/untitled.PNG",
+      "pickUpSpotNames": [
+        "nC_HideAtHomeLocation"
+      ],
+      "dropOffSpotNames": [
+        "nC_HideAtHomeLocation"
+      ],
+      "sitesFile": "newCareer.sites.json",
+      "showIncomingCargo": true,
+      "logisticTypesProvided": [
+        "parcel"
+      ],
+      "logisticTypesReceived": [
+        "parcel",
+        "parcel",
+        "food",
+        "parcel"
+      ],
+      "unlockCondition": {
+        "type": "minItemCount",
+        "target": 1
+      },
+      "logisticMaxItems": 2,
+      "logisticGenerators": [
+        {
+          "type": "provider",
+          "logisticTypes": [
+            "parcel"
+          ],
+          "min": 0,
+          "max": 1,
+          "interval": 900
+        },
+        {
+          "type": "receiver",
+          "logisticTypes": [
+            "parcel"
+          ],
+          "min": 0,
+          "max": 1,
+          "interval": 600
+        },
+        {
+          "type": "receiver",
+          "logisticTypes": [
+            "parcel"
+          ],
+          "min": 0,
+          "max": 1,
+          "interval": 300
+        },
+        {
+          "type": "receiver",
+          "logisticTypes": [
+            "parcel"
+          ],
+          "min": 0,
+          "max": 1,
+          "interval": 300
+        },
+        {
+          "type": "receiver",
+          "logisticTypes": [
+            "food"
+          ],
+          "min": 0,
+          "max": 1,
+          "interval": 180
+        }
+      ]
+    },
+    {
+      "id": "NC_CliffCornerHouse",
+      "name": "Cliff Bend House",
+      "description": "Random people ordering junk food and occasional emergency aid. Did you accidentally fly over the fence onto the highway on the way here?",
+      "preview": "previews/untitled.PNG",
+      "pickUpSpotNames": [
+        "CliffCornerHouse"
+      ],
+      "dropOffSpotNames": [
+        "CliffCornerHouse"
+      ],
+      "sitesFile": "newCareer.sites.json",
+      "showIncomingCargo": true,
+      "logisticTypesProvided": [],
+      "logisticTypesReceived": [
+        "parcel",
+        "parcel",
+        "food",
+        "parcel"
+      ],
+      "logisticGenerators": [
+        {
+          "type": "receiver",
+          "logisticTypes": [
+            "parcel",
+            "parcel",
+            "parcel"
+          ],
+          "min": -5,
+          "max": 1,
+          "interval": 120
+        },
+        {
+          "type": "receiver",
+          "logisticTypes": [
+            "food"
+          ],
+          "min": -1,
+          "max": 2,
+          "interval": 120
+        }
+      ]
+    },
+    {
+      "id": "NC_PowerlineHouse",
+      "name": "Powerline Radiation House",
+      "description": "Random people ordering junk food and occasional emergency aid. Occasionally sends suspicious packages. I think this one is scared of birds.",
+      "preview": "previews/untitled.PNG",
+      "pickUpSpotNames": [
+        "nC_PowerlineHouse"
+      ],
+      "dropOffSpotNames": [
+        "nC_PowerlineHouse"
+      ],
+      "sitesFile": "newCareer.sites.json",
+      "showIncomingCargo": true,
+      "logisticTypesProvided": [
+        "parcel"
+      ],
+      "logisticTypesReceived": [
+        "parcel",
+        "parcel",
+        "food"
+      ],
+      "unlockCondition": {
+        "type": "minItemCount",
+        "target": 1
+      },
+      "logisticMaxItems": 2,
+      "logisticGenerators": [
+        {
+          "type": "provider",
+          "logisticTypes": [
+            "parcel"
+          ],
+          "min": -5,
+          "max": 1,
+          "interval": 300
+        },
+        {
+          "type": "receiver",
+          "logisticTypes": [
+            "parcel",
+            "parcel",
+            "parcel"
+          ],
+          "min": -2,
+          "max": 1,
+          "interval": 120
+        },
+        {
+          "type": "receiver",
+          "logisticTypes": [
+            "food"
+          ],
+          "min": -1,
+          "max": 1,
+          "interval": 120
+        }
+      ]
+    },
+    {
+      "id": "NC_NatureEscapeHouses",
+      "name": "Forest",
+      "description": "Random people in the middle of nowhere ordering junk food and occasional emergency aid. Occasionally sends strange food. I think this one is loves birds.",
+      "preview": "previews/spawns_redwood_forest.jpg",
+      "pickUpSpotNames": [
+        "NatureEscapeHouse2",
+        "NatureEscapeHouse1"
+      ],
+      "dropOffSpotNames": [
+        "NatureEscapeHouse2",
+        "NatureEscapeHouse1"
+      ],
+      "sitesFile": "newCareer.sites.json",
+      "showIncomingCargo": true,
+      "logisticTypesProvided": [
+        "parcel",
+        "food"
+      ],
+      "logisticTypesReceived": [
+        "parcel",
+        "parcel",
+        "food",
+        "parcel"
+      ],
+      "unlockCondition": {
+        "type": "minItemCount",
+        "target": 1
+      },
+      "logisticMaxItems": 2,
+      "logisticGenerators": [
+        {
+          "type": "provider",
+          "logisticTypes": [
+            "parcel"
+          ],
+          "min": -3,
+          "max": 1,
+          "interval": 300
+        },
+        {
+          "type": "provider",
+          "logisticTypes": [
+            "food"
+          ],
+          "min": -1,
+          "max": 1,
+          "interval": 300
+        },
+        {
+          "type": "receiver",
+          "logisticTypes": [
+            "parcel"
+          ],
+          "min": -5,
+          "max": 1,
+          "interval": 120
+        },
+        {
+          "type": "receiver",
+          "logisticTypes": [
+            "parcel"
+          ],
+          "min": -5,
+          "max": 1,
+          "interval": 120
+        },
+        {
+          "type": "receiver",
+          "logisticTypes": [
+            "parcel"
+          ],
+          "min": -5,
+          "max": 1,
+          "interval": 120
+        },
+        {
+          "type": "receiver",
+          "logisticTypes": [
+            "food"
+          ],
+          "min": -1,
+          "max": 1,
+          "interval": 120
+        }
+      ]
+    },
+    {
+      "id": "NC_ApartmentsNearChurch",
+      "name": "West Residential Area Near Tramway",
+      "description": "Random people in the middle of nowhere ordering junk food and occasional emergency aid. I think this one is likes trains",
+      "preview": "previews/untitled.PNG",
+      "pickUpSpotNames": [
+        "ApartmentsNearChurch",
+        "OldApartmentsNearChurch"
+      ],
+      "dropOffSpotNames": [
+        "ApartmentsNearChurch",
+        "OldApartmentsNearChurch"
+      ],
+      "sitesFile": "newCareer.sites.json",
+      "showIncomingCargo": true,
+      "logisticTypesProvided": [],
+      "logisticTypesReceived": [
+        "parcel",
+        "parcel",
+        "food",
+        "parcel"
+      ],
+      "logisticGenerators": [
+        {
+          "type": "receiver",
+          "logisticTypes": [
+            "parcel"
+          ],
+          "min": -5,
+          "max": 2,
+          "interval": 300
+        },
+        {
+          "type": "receiver",
+          "logisticTypes": [
+            "food"
+          ],
+          "min": -2,
+          "max": 3,
+          "interval": 300
+        },
+        {
+          "type": "receiver",
+          "logisticTypes": [
+            "parcel"
+          ],
+          "min": -5,
+          "max": 1,
+          "interval": 120
+        },
+        {
+          "type": "receiver",
+          "logisticTypes": [
+            "parcel"
+          ],
+          "min": -5,
+          "max": 1,
+          "interval": 300
+        }
+      ]
+    },
+    {
+      "id": "scubaDivingSnorkelingSpots",
+      "name": "SCUBA Diving and Fishing Spots",
+      "description": "Random people ordering junk food and occasional emergency aid.",
+      "preview": "previews/untitled.PNG",
+      "pickUpSpotNames": [
+        "nC_BeachSide",
+        "nC_JettyLookout"
+      ],
+      "dropOffSpotNames": [
+        "nC_BeachSide",
+        "nC_JettyLookout"
+      ],
+      "sitesFile": "newCareer.sites.json",
+      "showIncomingCargo": true,
+      "logisticTypesProvided": [],
+      "logisticTypesReceived": [
+        "parcel",
+        "parcel",
+        "food"
+      ],
+      "logisticMaxItems": 2,
+      "logisticGenerators": [
+        {
+          "type": "receiver",
+          "logisticTypes": [
+            "parcel"
+          ],
+          "min": -5,
+          "max": 1,
+          "interval": 120
+        },
+        {
+          "type": "receiver",
+          "logisticTypes": [
+            "parcel"
+          ],
+          "min": -5,
+          "max": 1,
+          "interval": 120
+        },
+        {
+          "type": "receiver",
+          "logisticTypes": [
+            "food"
+          ],
+          "min": -1,
+          "max": 1,
+          "interval": 120
+        }
+      ]
+    },
+    {
+      "id": "radioStationLocatation",
+      "name": "Radio Station",
+      "description": "Random people ordering junk food and occasional emergency aid.",
+      "preview": "previews/untitled.PNG",
+      "pickUpSpotNames": [
+        "nC_RadioStationLookout"
+      ],
+      "dropOffSpotNames": [
+        "nC_RadioStationLookout"
+      ],
+      "sitesFile": "newCareer.sites.json",
+      "showIncomingCargo": true,
+      "logisticTypesProvided": [],
+      "logisticTypesReceived": [
+        "parcel",
+        "parcel",
+        "officeSupplies",
+        "food"
+      ],
+      "logisticMaxItems": 2,
+      "logisticGenerators": [
+        {
+          "type": "receiver",
+          "logisticTypes": [
+            "parcel"
+          ],
+          "min": -3,
+          "max": 1,
+          "interval": 120
+        },
+        {
+          "type": "receiver",
+          "logisticTypes": [
+            "parcel"
+          ],
+          "min": -3,
+          "max": 1,
+          "interval": 120
+        },
+        {
+          "type": "receiver",
+          "logisticTypes": [
+            "officeSupplies"
+          ],
+          "min": -3,
+          "max": 1,
+          "interval": 120
+        },
+        {
+          "type": "receiver",
+          "logisticTypes": [
+            "food"
+          ],
+          "min": -1,
+          "max": 2,
+          "interval": 120
+        }
+      ]
+    },
+    {
+      "id": "nC_constructionzoneNearHighway",
+      "name": "Construction Zone - Near Highway",
+      "description": "The unofficial WIP zone",
+      "preview": "previews/untitled.jpg",
+      "pickUpSpotNames": [
+        "nC_UnderConstructionAreaNearHighway"
+      ],
+      "dropOffSpotNames": [
+        "nC_UnderConstructionAreaNearHighway"
+      ],
+      "sitesFile": "newCareer.sites.json",
+      "showIncomingCargo": true,
+      "logisticTypesProvided": [],
+      "logisticTypesReceived": [
+        "parcel",
+        "industrial"
+      ],
+      "logisticMaxItems": 5,
+      "logisticGenerators": [
+        {
+          "type": "receiver",
+          "logisticTypes": [
+            "parcel"
+          ],
+          "min": -1,
+          "max": 3,
+          "interval": 120
+        },
+        {
+          "type": "receiver",
+          "logisticTypes": [
+            "industrial"
+          ],
+          "min": -1,
+          "max": 5,
+          "interval": 120
+        }
+      ]
+    },
+    {
+      "id": "nC_EasyAutoRepairGarageSpot",
+      "name": "Easy Auto Repair",
+      "description": "Apparently this repair shop is oh so conveniently placed at a common crash point - Coming off the bridge at high speeds aha!",
+      "preview": "previews/easyAutoRepairs.jpg",
+      "pickUpSpotNames": [
+        "nC_EasyAutoRepairGarage1"
+      ],
+      "dropOffSpotNames": [
+        "nC_EasyAutoRepairGarage1"
+      ],
+      "sitesFile": "newCareer.sites.json",
+      "showIncomingCargo": true,
+      "logisticTypesProvided": [
+        "mechanicalParts",
+        "parcel"
+      ],
+      "logisticTypesReceived": [
+        "parcel",
+        "food",
+        "parcel",
+        "mechanicalParts"
+      ],
+      "unlockCondition": {
+        "type": "minItemCount",
+        "target": 1
+      },
+      "logisticMaxItems": 2,
+      "logisticGenerators": [
+        {
+          "type": "receiver",
+          "logisticTypes": [
+            "parcel",
+            "parcel"
+          ],
+          "min": -3,
+          "max": 1,
+          "interval": 120
+        },
+        {
+          "type": "receiver",
+          "logisticTypes": [
+            "food"
+          ],
+          "min": -1,
+          "max": 1,
+          "interval": 180
+        },
+        {
+          "type": "receiver",
+          "logisticTypes": [
+            "mechanicalParts"
+          ],
+          "min": -1,
+          "max": 1,
+          "interval": 180
+        },
+        {
+          "type": "provider",
+          "logisticTypes": [
+            "parcel"
+          ],
+          "min": -1,
+          "max": 2,
+          "interval": 240
+        },
+        {
+          "type": "provider",
+          "logisticTypes": [
+            "mechanicalParts"
+          ],
+          "min": -1,
+          "max": 3,
+          "interval": 120
+        }
+      ]
+    },
+    {
+      "id": "nC_MobilePhoneTowersLocation",
+      "name": "Mobile Tower",
+      "description": "The enemy of the Bird",
+      "preview": "previews/untitled.jpg",
+      "pickUpSpotNames": [
+        "MobileTowerNorth",
+        "MobileTowerSite",
+        "MobileTower2"
+      ],
+      "dropOffSpotNames": [
+        "MobileTowerNorth",
+        "MobileTowerSite",
+        "MobileTower2"
+      ],
+      "sitesFile": "newCareer.sites.json",
+      "showIncomingCargo": true,
+      "logisticTypesProvided": [],
+      "logisticTypesReceived": [
+        "parcel",
+        "mechanicalParts",
+        "food",
+        "parcel"
+      ],
+      "logisticGenerators": [
+        {
+          "type": "receiver",
+          "logisticTypes": [
+            "parcel"
+          ],
+          "min": -2,
+          "max": 1,
+          "interval": 300
+        },
+        {
+          "type": "receiver",
+          "logisticTypes": [
+            "mechanicalParts"
+          ],
+          "min": -3,
+          "max": 1,
+          "interval": 300
+        },
+        {
+          "type": "receiver",
+          "logisticTypes": [
+            "parcel"
+          ],
+          "min": -2,
+          "max": 1,
+          "interval": 300
+        },
+        {
+          "type": "receiver",
+          "logisticTypes": [
+            "food"
+          ],
+          "min": -1,
+          "max": 1,
+          "interval": 120
+        }
+      ]
+    },
+    {
+      "id": "nC_solarFarmSite",
+      "name": "Solar Farm",
+      "description": "The Sqweak of Global Warming",
+      "preview": "previews/untitled.jpg",
+      "pickUpSpotNames": [
+        "nC_solarFarmParking"
+      ],
+      "dropOffSpotNames": [
+        "nC_solarFarmParking"
+      ],
+      "sitesFile": "newCareer.sites.json",
+      "showIncomingCargo": true,
+      "logisticTypesProvided": [],
+      "logisticTypesReceived": [
+        "parcel"
+      ],
+      "logisticMaxItems": 2,
+      "logisticGenerators": [
+        {
+          "type": "receiver",
+          "logisticTypes": [
+            "parcel"
+          ],
+          "min": -3,
+          "max": 2,
+          "interval": 120
+        }
+      ]
     }
-	],
-	*/
-/**
-	"computers":[
-    {
-      "id":"NC_easyAutoRepairGarageComputer",
-      "name":"Easy Auto Repair Services",
-      "description":"We do repairs easy.",
-      "preview":"servicestationgaragecomputer.jpg",
-      "doors":[["EasyAutoRepairGarage1"]],
-      //"screens":["servicestationGarageComputer_screen_1"],//servicestationGarageComputer_screen_1
-      "functions": {"painting":true, "tuning":true, "vehicleInventory":true, "vehicleShop":true, "partShop":true, "partInventory":true, "insurancePolicies":false},
-      "activityAcceptProps":[
-        {"keyLabel":"Vehicle & Parts Management"},
-        {"keyLabel":"Vehicle & Parts Shopping"},
-        {"keyLabel":"Insurance Management"},
-      ],
-	  
-      //"iconOffsetHeight":0.15,
-      //"iconLift":0.2,
-      //"icon":"poi_laptop_round"
-	  
-    }]
-	*/
-  "deliveryProviders":[
-//RACEWAY
-    {
-		"id":"racewayCircuitLocation",
-		"name":"Raceway Circuit",
-		"description":"Random people ordering junk food and mechanical parts.",
-		"preview":"previews/untitled.PNG",
-		"dropOffSpotNames":["RacewaySouthService","RacewayServicePits","RaceWatchstandsSouthCorner","DragstripTrailerParking"],
-		"pickUpSpotNames":["RacewaySouthService","RacewayServicePits","RaceWatchstandsSouthCorner","DragstripTrailerParking"],
-		"sitesFile":"newCareer.sites.json",
-		"showIncomingCargo":true,
-		"logisticTypesProvided":["mechanicalParts"],
-		"logisticTypesReceived":["parcel","medicalAid","food","mechanicalParts"],
-		"unlockCondition":{"type":"minItemCount","target":1},
-        "logisticMaxItems":3,
-		"logisticGenerators":[
-		{
-		  "type":"provider",
-		  "logisticTypes":["mechanicalParts"],
-		  "min":-3,
-		  "max":1,
-		  "interval":120
-		}, {
-		  "type":"receiver",
-		  "logisticTypes":["food"],
-		  "min":-1,
-		  "max":3,
-		  "interval":120
-		}, {
-		  "type":"receiver",
-		  "logisticTypes":["mechanicalParts"],
-		  "min":-1,
-		  "max":1,
-		  "interval":120
-		}
-		],
-    },
-//Admin Building
-    {
-		"id":"AdministriationBuilding",
-		"name":"Administration Building",
-		"description":"Random people ordering junk food and office supplies.",
-		"preview":"previews/untitled.PNG",
-		"dropOffSpotNames":["AdministriationBuilding"],
-		"pickUpSpotNames":["AdministriationBuilding"],
-		"sitesFile":"newCareer.sites.json",
-		"showIncomingCargo":true,
-		"logisticTypesProvided":["parcel","monehDelivery"],
-		"logisticTypesReceived":["parcel","medicalAid","food","officeSupplies"],
-		"logisticMaxItems":5,
-		"unlockCondition":{"type":"minItemCount","target":1},
-		"logisticGenerators":[
-		{
-		  "type":"provider",
-		  "logisticTypes":["parcel"],
-		  "min":-3,
-		  "max":1,
-		  "interval":120
-		}, {
-		  "type":"receiver",
-		  "logisticTypes":["food"],
-		  "min":-1,
-		  "max":5,
-		  "interval":120
-		}, {
-		  "type":"receiver",
-		  "logisticTypes":["officeSupplies"],
-		  "min":-1,
-		  "max":1,
-		  "interval":120
-		}
-		],
-    },
-//TRAIN STATION
-    {
-		"id":"TrainStationLocation",
-		"name":"Train Station",
-		"description":"IDK, whatever people do at train stations I guess.",
-		"preview":"previews/untitled.PNG",
-		"dropOffSpotNames":["TrainStationServiceTunnel"],
-		"pickUpSpotNames":["TrainStationBusStop","TrainStationServiceTunnel"],
-		"sitesFile":"newCareer.sites.json",
-		"showIncomingCargo":true,
-		"logisticTypesProvided":["mechanicalParts","parcel"],
-		"logisticTypesReceived":["parcel","medicalAid","food","officeSupplies","mechanicalParts"],
-		"logisticMaxItems":5,
-		"unlockCondition":{"type":"minItemCount","target":1},
-		"logisticGenerators":[
-		{
-		  "type":"provider",
-		  "logisticTypes":["parcel","mechanicalParts"],
-		  "min":-3,
-		  "max":1,
-		  "interval":120
-		}, {
-		  "type":"receiver",
-		  "logisticTypes":["food","mechanicalParts"],
-		  "min":-1,
-		  "max":3,
-		  "interval":120
-		}, {
-		  "type":"receiver",
-		  "logisticTypes":["medicalAid","officeSupplies","parcel"],
-		  "min":-1,
-		  "max":1,
-		  "interval":120
-		}
-		],
-    },
-
-    {
-		"id":"TramwayStationParking",
-		"name":"Tramway Station",
-		"description":"IDK, whatever people do at tram stations I guess.",
-		"preview":"previews/untitled.PNG",
-		"dropOffSpotNames":["TramwayParking"],
-		"pickUpSpotNames":["TramwayParking"],
-		"sitesFile":"newCareer.sites.json",
-		"showIncomingCargo":true,
-		"logisticTypesProvided":["mechanicalParts","parcel"],
-		"logisticTypesReceived":["parcel","medicalAid","food","officeSupplies","mechanicalParts"],
-		"logisticMaxItems":5,
-		"unlockCondition":{"type":"minItemCount","target":1},
-		"logisticGenerators":[
-		{
-		  "type":"provider",
-		  "logisticTypes":["parcel","mechanicalParts"],
-		  "min":-3,
-		  "max":1,
-		  "interval":120
-		}, {
-		  "type":"receiver",
-		  "logisticTypes":["food","mechanicalParts"],
-		  "min":-1,
-		  "max":3,
-		  "interval":120
-		}, {
-		  "type":"receiver",
-		  "logisticTypes":["medicalAid","officeSupplies"],
-		  "min":-1,
-		  "max":1,
-		  "interval":120
-		}
-		],
-    },
-//ChinaTown and Western Industrial Area
-    {
-		"id":"ChinaTownBackAlleyway",
-		"name":"China Town Back Alleyway",
-		"description":"What you doin\' here? Do not bring that damn truck here, it won\'t fit I tell you! Sorry we not sell Chinese-Australian style Honey Chicken.",
-		"preview":"previews/chinatownRestaurant.jpg",
-		"dropOffSpotNames":["ChinaTownAlleyway"],
-		"pickUpSpotNames":["ChinaTownAlleyway"],
-		"sitesFile":"newCareer.sites.json",
-		"showIncomingCargo":true,
-		"logisticTypesProvided":["parcel"],
-		"logisticTypesReceived":["parcel","medicalAid","food","officeSupplies","foodSupplies"],
-		"logisticMaxItems":10,
-		"unlockCondition":{"type":"minItemCount","target":3},
-		"logisticGenerators":[
-		{
-		  "type":"provider",
-		  "logisticTypes":["parcel"],
-		  "min":-3,
-		  "max":3,
-		  "interval":120
-		}, {
-		  "type":"provider",
-		  "logisticTypes":["food"],
-		  "min":-3,
-		  "max":10,
-		  "interval":60
-		}, {
-		  "type":"receiver",
-		  "logisticTypes":["foodSupplies"],
-		  "min":-1,
-		  "max":1,
-          "slotsMax":8,
-		  "interval":180
-		}, {
-		  "type":"receiver",
-		  "logisticTypes":["officeSupplies","parcel","fanMerch"],
-		  "min":-5,
-		  "max":3,
-		  "interval":120
-		}, {
-		  "type":"receiver",
-		  "logisticTypes":["medicalAid"],
-		  "min":-5,
-		  "max":1,
-		  "interval":300
-		}
-		],
-    },
-
-    {
-		"id":"fireStationGarage",
-		"name":"Belasco City Fire Station",
-		"description":"So I hear Americans have a thing for calling firemen to remove locks from their chastity belts... Thank Kellog for indirectly unintentionally popularising such a thing",
-		"preview":"previews/untitled.PNG",
-		"pickUpSpotNames":["BehindFireStation"],
-		"dropOffSpotNames":["BehindFireStation"],
-		"sitesFile":"newCareer.sites.json",
-		"showIncomingCargo":true,
-		"logisticTypesProvided":[],
-		"logisticTypesReceived":["parcel","medicalAid","food","officeSupplies","mechanicalParts"],
-        "logisticMaxItems":3,
-		"unlockCondition":{"type":"minItemCount","target":1},
-		"logisticGenerators":[
-		{
-		  "type":"receiver",
-		  "logisticTypes":["food","parcel"],
-		  "min":-1,
-		  "max":1,
-		  "interval":120
-		}, {
-		  "type":"receiver",
-		  "logisticTypes":["officeSupplies"],
-		  "min":-5,
-		  "max":2,
-		  "interval":120
-		}, {
-		  "type":"receiver",
-		  "logisticTypes":["medicalAid"],
-		  "min":-5,
-		  "max":1,
-		  "interval":300
-		}, {
-		  "type":"receiver",
-		  "logisticTypes":["mechanicalParts"],
-		  "min":-2,
-		  "max":2,
-		  "interval":180
-		}
-		],
-    },
-    {
-		"id":"churchEntranceEntryway",
-		"name":"Belasco City Church",
-		"description":"Don\'t forget kids, after you bang one job and confess another one out and you\'re good for heaven\'s sake! Also virgin sages are a must-have at least until marriage but nobody said anything about a back door-",
-		"preview":"previews/untitled.PNG",
-		"dropOffSpotNames":["ChurchEntrance"],
-		"pickUpSpotNames":["ChurchEntrance"],
-		"sitesFile":"newCareer.sites.json",
-		"showIncomingCargo":true,
-		"logisticTypesProvided":["food"],
-		"logisticTypesReceived":["food"],
-        "logisticMaxItems":5,
-		"unlockCondition":{"type":"minItemCount","target":1},
-		"logisticGenerators":[
-			{
-			  "type":"provider",
-			  "logisticTypes":["food"],
-			  "min":-5,
-			  "max":3,
-			  "interval":90
-			},
-			{
-			  "type":"receiver",
-			  "logisticTypes":["food"],
-			  "min":-5,
-			  "max":3,
-			  "interval":90
-			}
-		],
-    },
-	
-  //MOVIE STUDIO
-    {
-		"id":"Career_lensFlareMovieStudioLoadingDocks",
-		"name":"Lens Flare Movie Studio Loading Docks",
-		"description":"Receives various supplies needed for films. Sends occasional parcels.",
-		"preview":"previews/untitled.PNG",
-		"pickUpSpotNames":[
-			"Career_MovieStudioLoadingDocksA",
-			"Career_MovieStudioLoadingDocksB",
-			"Career_MovieStudioLoadingDocksC",
-			"Career_MovieStudioLoadingDocksD"
-			],
-		"dropOffSpotNames":["Career_MovieStudioLoadingDocksB"],
-		"sitesFile":"newCareer.sites.json",
-		"showIncomingCargo":true,
-		"logisticTypesProvided":["parcel","fanMerch"],
-		"logisticTypesReceived":["parcel","mechanicalParts","officeSupplies","industrial","shopSupplies","foodSupplies"],
-		"logisticMaxItems":10,
-		"unlockCondition":{"type":"minItemCount","target":5},
-		"logisticGenerators":[
-		{
-			"type":"provider",
-			"logisticTypes":["parcel"],
-			"min":-2,
-			"max":3,
-			"slotsMax":8,
-			"interval":120
-		}, {
-			"type":"provider",
-			"logisticTypes":["fanMerch"],
-			"min":0,
-			"max":3,
-			"interval":120
-		}
-		],
-    },
-    {
-      "id":"Career_lensFlareMovieStudioStages",
-      "name":"Lens Flare Movie Studio Filming Area",
-      "description":"Receives various supplies needed for films. Sends occasional parcels.",
-      "preview":"previews/untitled.PNG",
-      "pickUpSpotNames":[
-		"Career_MovieStudioStage1",
-		"Career_MovieStudioStage2",
-		"Career_MovieStudioWaterTower",
-		"Career_MovieStudioStage3LoadingArea",
-		"Career_MovieStudioLandingArea",
-		],
-      "dropOffSpotNames":["Career_MovieStudioWaterTower","Career_MovieStudioLandingArea"],
-      "sitesFile":"newCareer.sites.json",
-      "showIncomingCargo":true,
-      "logisticTypesProvided":["parcel","fanMerch"],
-      "logisticTypesReceived":["parcel","medicalAid","mechanicalParts","officeSupplies","shopSupplies","food"],
-      "logisticMaxItems":6,
-      "unlockCondition":{"type":"minItemCount","target":3},
-	  "logisticGenerators":[
-        {
-          "type":"provider",
-          "logisticTypes":["fanMerch"],
-          "min":-2,
-          "max":3,
-          "slotsMax":8,
-          "interval":60
-        },
-        {
-          "type":"provider",
-          "logisticTypes":["parcel"],
-          "min":-3,
-          "max":1,
-          "slotsMax":8,
-          "interval":120
-        },
-		{
-          "type":"receiver",
-          "logisticTypes":["parcel"],
-          "min":0,
-          "max":3,
-          "interval":120
-        }, {
-          "type":"receiver",
-          "logisticTypes":["food"],
-          "min":-1,
-          "max":3,
-          "interval":120
-        }
-      ],
-    },
-
-//HOTROLLED IS BACK
-    {
-      "id":"HotRolledBacksideTruckParking",
-      "name":"Hot Rolled inc.",
-      "description":"So apparently they got lazy at production or something but they finally got around to making stuff.",
-      "preview":"previews/steelFactory.jpg",
-      "pickUpSpotNames":["HotRolledBackParking","HotRolledReception"],
-      "dropOffSpotNames":["HotRolledBackParking"],
-      "sitesFile":"newCareer.sites.json",
-      "showIncomingCargo":true,
-      "logisticTypesProvided":["industrial","parcel"],
-      "logisticTypesReceived":["industrial","food","medicalAid","parcel","mechanicalParts"],
-      "logisticMaxItems":16,
-      "unlockCondition":{"type":"minItemCount","target":2},
-	  "logisticGenerators":[
-        {
-          "type":"provider",
-          "logisticTypes":["parcel","industrial"],
-          "min":-2,
-          "max":3,
-          "slotsMax":8,
-          "interval":120
-        }, {
-          "type":"provider",
-          "logisticTypes":["industrial"],
-          "min":-3,
-          "max":5,
-          "interval":90
-        }, {
-          "type":"receiver",
-          "logisticTypes":["industrial","mechanicalParts"],
-          "min":-3,
-          "max":5,
-          "interval":90
-        }, {
-          "type":"receiver",
-          "logisticTypes":["food","medicalAid","parcel"],
-          "min":-5,
-          "max":2,
-          "interval":120
-        }
-      ],
-    },
-    {
-      "id":"shuffleboardIslandHeadOffice",
-      "name":"Shuffleboard Logistics and Distribution Head Office",
-      "description":"Ships and receives a small variety of cargo types from the island office near Spearleaf Refinery.",
-      "preview":"previews/spawns_refinery.jpg",
-      "pickUpSpotNames":["ShuffleboardLogisticsHeadOffice"],
-      "dropOffSpotNames":["ShuffleboardLogisticsHeadOffice"],
-      "sitesFile":"newCareer.sites.json",
-      "showIncomingCargo":true,
-      "logisticTypesProvided":["parcel","shopSupplies","officeSupplies"],
-      "logisticTypesReceived":["parcel","shopSupplies","officeSupplies","mechanicalParts","foodSupplies", "industrial"],
-      "logisticMaxItems":10,
-      "unlockCondition":{"type":"minItemCount","target":1}
-    },
-    {
-      "id":"refineryIslandStuff",
-      "name":"Spearleaf Refinery",
-      "description":"So where does the dirty oil end up? Maybe that\'s why the ocean\'s very blue today...",
-      "preview":"previews/spawns_refinery.jpg",
-      "pickUpSpotNames":["RefineryReception","RefineryDocksA"],
-      "dropOffSpotNames":["RefineryReception","RefineryDocksA"],
-      "sitesFile":"newCareer.sites.json",
-      "showIncomingCargo":true,
-      "logisticTypesProvided":["industrial","parcel"],
-      "logisticTypesReceived":["industrial","parcel","mechanicalParts","medicalAid"],
-      "logisticMaxItems":12,
-      "unlockCondition":{"type":"minItemCount","target":1},
-	  "logisticGenerators":[
-        {
-          "type":"provider",
-          "logisticTypes":["parcel"],
-          "min":-2,
-          "max":3,
-          "slotsMax":8,
-          "interval":120
-        }, {
-          "type":"provider",
-          "logisticTypes":["industrial"],
-          "min":0,
-          "max":8,
-          "slotsMax":5,
-          "interval":90
-        }, {
-          "type":"receiver",
-          "logisticTypes":["industrial","mechanicalParts"],
-          "min":-1,
-          "max":5,
-          "interval":90
-        }, {
-          "type":"receiver",
-          "logisticTypes":["medicalAid","parcel"],
-          "min":-1,
-          "max":2,
-          "interval":120
-        }
-      ],
-    },
-//SECRET TUNNELS
-    {
-      "id":"ServiceTunnelsUnderCity",
-      "name":"Tunnel",
-      "description":"Some suspicious business is going on in these parts...",
-      "preview":"previews/untitled.PNG",
-      "pickUpSpotNames":["ServiceTunnelUnderCityRiver","ServiceTunnelNorthEast"],
-      "dropOffSpotNames":["ServiceTunnelUnderCityRiver","ServiceTunnelNorthEast"],
-      "sitesFile":"newCareer.sites.json",
-      "showIncomingCargo":true,
-      "logisticTypesProvided":["monehDelivery","parcel"],
-      "logisticTypesReceived":["parcel"],
-      "logisticMaxItems":5,
-      "unlockCondition":{"type":"minItemCount","target":1},
-	  "logisticGenerators":[
-        {
-          "type":"provider",
-          "logisticTypes":["parcel"],
-          "min":-2,
-          "max":3,
-          "interval":300
-        }, {
-          "type":"receiver",
-          "logisticTypes":["monehDelivery","parcel","fanMerch"],
-          "min":0,
-          "max":3,
-          "interval":300
-        }
-      ],
-    },
-
-//TOURIST ATTRACTIONS
-    {
-      "id":"touristAttractionsSpots",
-      "name":"Active Attraction Spot",
-      "description":"Random people ordering junk food and occasional emergency aid. Maybe they\'ll send some postage once in a blue moon",
-      "preview":"previews/untitled.PNG",
-      "pickUpSpotNames":["tennisCourtsReception","LighthouseParking"],
-	  "dropOffSpotNames":["tennisCourtsReception","LighthouseParking"],
-      "sitesFile":"newCareer.sites.json",
-      "showIncomingCargo":true,
-      "logisticTypesProvided":["parcel"],
-      "logisticTypesReceived":["parcel","medicalAid","food"],
-      "unlockCondition":{"type":"minItemCount","target":1},
-      "logisticMaxItems":2,
-	  "logisticGenerators":[
-	    {
-          "type":"provider",
-          "logisticTypes":["parcel"],
-          "min":-5,
-          "max":1,
-          "interval":300
-        },
-	    {
-          "type":"receiver",
-          "logisticTypes":["parcel","medicalAid","fanMerch"],
-          "min":-5,
-          "max":1,
-          "interval":120
-        }, {
-          "type":"receiver",
-          "logisticTypes":["food"],
-          "min":-5,
-          "max":5,
-          "interval":120
-        }
-      ],
-    },
-
-//RESIDENTIAL AREAS
-    {
-		"id":"privateHousesRandom",
-		"name":"Quarry side Forest House",
-		"description":"Random people ordering junk food and occasional emergency aid. Maybe they\'ll send some postage once in a blue moon",
-		"preview":"previews/untitled.PNG",
-		"pickUpSpotNames":["QuarrySideForestHouse"],
-		"dropOffSpotNames":["QuarrySideForestHouse"],
-		"sitesFile":"newCareer.sites.json",
-		"showIncomingCargo":true,
-		"logisticTypesProvided":["parcel","food"],
-		"logisticTypesReceived":["parcel","medicalAid","food"],
-		"unlockCondition":{"type":"minItemCount","target":1},
-        "logisticMaxItems":2,
-		"logisticGenerators":[
-		{
-		  "type":"provider",
-		  "logisticTypes":["parcel"],
-		  "min":-5,
-		  "max":1,
-		  "interval":300
-		},
-		{
-		  "type":"provider",
-		  "logisticTypes":["food"],
-		  "min":-3,
-		  "max":1,
-		  "interval":300
-		},
-		{
-		  "type":"receiver",
-		  "logisticTypes":["parcel"],
-		  "min":-3,
-		  "max":2,
-		  "interval":120
-		},
-		{
-		  "type":"receiver",
-		  "logisticTypes":["medicalAid"],
-		  "min":-5,
-		  "max":2,
-		  "interval":300
-		},
-		{
-		  "type":"receiver",
-		  "logisticTypes":["fanMerch"],
-		  "min":-1,
-		  "max":1,
-		  "interval":120
-		}, {
-		  "type":"receiver",
-		  "logisticTypes":["food"],
-		  "min":-1,
-		  "max":2,
-		  "interval":120
-		}
-		],
-    },
-    {
-		"id":"PigeonHouseTwin",
-		"name":"Pigeon\'s Twin House",
-		"description":"Random people ordering junk food and occasional emergency aid, maybe sends something once in a blue moon. Did you remember your first Pigeon delivery?",
-		"preview":"previews/spawn_beamlr_preview.jpg",//"previews/pigeon.jpg",
-		"pickUpSpotNames":["PigeonHouseTwinLocation"],
-		"dropOffSpotNames":["PigeonHouseTwinLocation"],
-		"sitesFile":"newCareer.sites.json",
-		"showIncomingCargo":true,
-		"logisticTypesProvided":["parcel","shopSupplies"],
-		"logisticTypesReceived":["parcel","medicalAid","food","fanMerch"],
-        "logisticMaxItems":2,
-		"unlockCondition":{"type":"minItemCount","target":1},
-		"logisticGenerators":[
-		{
-		  "type":"provider",
-		  "logisticTypes":["parcel"],
-		  "min":-5,
-		  "max":1,
-		  "interval":300
-		},
-		{
-		  "type":"provider",
-		  "logisticTypes":["shopSupplies"],
-		  "min":-10,
-		  "max":1,
-		  "interval":300
-		},
-		{
-		  "type":"receiver",
-		  "logisticTypes":["parcel","medicalAid","fanMerch"],
-		  "min":-5,
-		  "max":1,
-		  "interval":120
-		}, {
-		  "type":"receiver",
-		  "logisticTypes":["food","fanMerch"],
-		  "min":-1,
-		  "max":1,
-		  "interval":120
-		}
-		],
-    },
-    {
-		"id":"HideAtHomeHouse",
-		"name":"Hide At Home House",
-		"description":"Random people ordering junk food and occasional emergency aid. Occasionally sends suspicious packages. Did you run through the gates from the highway in the getaway?",
-		"preview":"previews/untitled.PNG",
-		"pickUpSpotNames":["HideAtHomeLocation"],
-		"dropOffSpotNames":["HideAtHomeLocation"],
-		"sitesFile":"newCareer.sites.json",
-		"showIncomingCargo":true,
-		"logisticTypesProvided":["parcel"],
-		"logisticTypesReceived":["parcel","medicalAid","food","fanMerch"],
-		"unlockCondition":{"type":"minItemCount","target":1},
-        "logisticMaxItems":2,
-		"logisticGenerators":[
-		{
-		  "type":"provider",
-		  "logisticTypes":["parcel"],
-		  "min":-5,
-		  "max":1,
-		  "interval":300
-		},
-		{
-		  "type":"receiver",
-		  "logisticTypes":["parcel","medicalAid","fanMerch"],
-		  "min":-3,
-		  "max":1,
-		  "interval":120
-		}, {
-		  "type":"receiver",
-		  "logisticTypes":["food"],
-		  "min":-1,
-		  "max":1,
-		  "interval":120
-		}
-		],
-    },
-    {
-		"id":"CliffCornerHouse",
-		"name":"Cliff Bend House",
-		"description":"Random people ordering junk food and occasional emergency aid. Did you accidentally fly over the fence onto the highway on the way here?",
-		"preview":"previews/untitled.PNG",
-		"pickUpSpotNames":["CliffCornerHouse"],
-		"dropOffSpotNames":["CliffCornerHouse"],
-		"sitesFile":"newCareer.sites.json",
-		"showIncomingCargo":true,
-		"logisticTypesProvided":[],
-		"logisticTypesReceived":["parcel","medicalAid","food","fanMerch"],
-		"logisticGenerators":[
-		{
-		  "type":"receiver",
-		  "logisticTypes":["parcel","medicalAid","fanMerch"],
-		  "min":-5,
-		  "max":1,
-		  "interval":120
-		}, {
-		  "type":"receiver",
-		  "logisticTypes":["food"],
-		  "min":-1,
-		  "max":2,
-		  "interval":120
-		}
-		],
-    },
-    {
-		"id":"PowerlineHouse",
-		"name":"Powerline Radiation House",
-		"description":"Random people ordering junk food and occasional emergency aid. Occasionally sends suspicious packages. I think this one is scared of birds.",
-		"preview":"previews/untitled.PNG",
-		"pickUpSpotNames":["PowerlineHouse"],
-		"dropOffSpotNames":["PowerlineHouse"],
-		"sitesFile":"newCareer.sites.json",
-		"showIncomingCargo":true,
-		"logisticTypesProvided":["parcel"],
-		"logisticTypesReceived":["parcel","medicalAid","food"],
-		"unlockCondition":{"type":"minItemCount","target":1},
-        "logisticMaxItems":2,
-		"logisticGenerators":[
-		{
-		  "type":"provider",
-		  "logisticTypes":["parcel"],
-		  "min":-5,
-		  "max":1,
-		  "interval":300
-		},
-		{
-		  "type":"receiver",
-		  "logisticTypes":["parcel","medicalAid","fanMerch"],
-		  "min":-2,
-		  "max":1,
-		  "interval":120
-		}, {
-		  "type":"receiver",
-		  "logisticTypes":["food"],
-		  "min":-1,
-		  "max":1,
-		  "interval":120
-		}
-		],
-    },
-    {
-		"id":"NatureEscapeHouses",
-		"name":"Forest",
-		"description":"Random people in the middle of nowhere ordering junk food and occasional emergency aid. Occasionally sends strange food. I think this one is loves birds.",
-		"preview":"previews/spawns_redwood_forest.jpg",
-		"pickUpSpotNames":["NatureEscapeHouse2","NatureEscapeHouse1"],
-		"dropOffSpotNames":["NatureEscapeHouse2","NatureEscapeHouse1","fanMerch"],
-		"sitesFile":"newCareer.sites.json",
-		"showIncomingCargo":true,
-		"logisticTypesProvided":["parcel","food"],
-		"logisticTypesReceived":["parcel","medicalAid","food"],
-		"unlockCondition":{"type":"minItemCount","target":1},
-        "logisticMaxItems":2,
-		"logisticGenerators":[
-		{
-		  "type":"provider",
-		  "logisticTypes":["parcel"],
-		  "min":-3,
-		  "max":1,
-		  "interval":300
-		},
-		{
-		  "type":"provider",
-		  "logisticTypes":["food"],
-		  "min":-1,
-		  "max":1,
-		  "interval":300
-		},
-		{
-		  "type":"receiver",
-		  "logisticTypes":["parcel","medicalAid","fanMerch"],
-		  "min":-5,
-		  "max":1,
-		  "interval":120
-		}, {
-		  "type":"receiver",
-		  "logisticTypes":["food"],
-		  "min":-1,
-		  "max":1,
-		  "interval":120
-		}
-		],
-    },
-    {
-		"id":"ApartmentsNearChurch",
-		"name":"West Residential Area Near Tramway",
-		"description":"Random people in the middle of nowhere ordering junk food and occasional emergency aid. I think this one is likes trains",
-		"preview":"previews/untitled.PNG",
-		"pickUpSpotNames":["ApartmentsNearChurch","OldApartmentsNearChurch"],
-		"dropOffSpotNames":["ApartmentsNearChurch","OldApartmentsNearChurch"],
-		"sitesFile":"newCareer.sites.json",
-		"showIncomingCargo":true,
-		"logisticTypesProvided":[],
-		"logisticTypesReceived":["parcel","medicalAid","food","fanMerch"],
-		"logisticGenerators":[
-		{
-		  "type":"receiver",
-		  "logisticTypes":["parcel"],
-		  "min":-5,
-		  "max":2,
-		  "interval":300
-		},
-		{
-		  "type":"receiver",
-		  "logisticTypes":["food"],
-		  "min":-2,
-		  "max":3,
-		  "interval":300
-		},
-		{
-		  "type":"receiver",
-		  "logisticTypes":["medicalAid"],
-		  "min":-5,
-		  "max":1,
-		  "interval":120
-		}
-		],
-    },
-
-//RECEIVING ONLY AREAS
-    {
-      "id":"scubaDivingSnorkelingSpots",
-      "name":"SCUBA Diving and Fishing Spots",
-      "description":"Random people ordering junk food and occasional emergency aid.",
-      "preview":"previews/untitled.PNG",
-      "pickUpSpotNames":["BeachSide","JettyLookout"],
-      "dropOffSpotNames":["BeachSide","JettyLookout"],
-      "sitesFile":"newCareer.sites.json",
-      "showIncomingCargo":true,
-      "logisticTypesProvided":[],
-      "logisticTypesReceived":["parcel","medicalAid","mechanicalParts","officeSupplies","shopSupplies","food"],
-      "logisticMaxItems":2,
-	  "logisticGenerators":[
-	    {
-          "type":"receiver",
-          "logisticTypes":["parcel","medicalAid"],
-          "min":-5,
-          "max":1,
-          "interval":120
-        }, {
-          "type":"receiver",
-          "logisticTypes":["food"],
-          "min":-1,
-          "max":1,
-          "interval":120
-        }
-      ],
-    },
-    {
-      "id":"radioStationLocatation",
-      "name":"Radio Station",
-      "description":"Random people ordering junk food and occasional emergency aid.",
-      "preview":"previews/untitled.PNG",
-      "pickUpSpotNames":["RadioStationLookout"],
-      "dropOffSpotNames":["RadioStationLookout"],
-      "sitesFile":"newCareer.sites.json",
-      "showIncomingCargo":true,
-      "logisticTypesProvided":[],
-      "logisticTypesReceived":["parcel","medicalAid","mechanicalParts","officeSupplies","shopSupplies","food"],
-      "logisticMaxItems":2,
-	  "logisticGenerators":[
-	    {
-          "type":"receiver",
-          "logisticTypes":["parcel","medicalAid"],
-          "min":-3,
-          "max":1,
-          "interval":120
-        }, {
-          "type":"receiver",
-          "logisticTypes":["food"],
-          "min":-1,
-          "max":2,
-          "interval":120
-        }
-      ],
-    },
-//Construction Facilities alike
-	{
-      "id":"constructionzoneNearHighway",
-      "name":"Construction Zone - Near Highway",
-      "description":"The unofficial WIP zone",
-      "preview":"previews/untitled.jpg",
-      "pickUpSpotNames":["UnderConstructionAreaNearHighway"],
-      "dropOffSpotNames":["UnderConstructionAreaNearHighway"],
-      "sitesFile":"newCareer.sites.json",
-      "showIncomingCargo":true,
-      "logisticTypesProvided":[],
-      "logisticTypesReceived":["parcel","industrial"],
-      "logisticMaxItems":3,
-	  "logisticGenerators":[
-	    {
-          "type":"receiver",
-          "logisticTypes":["parcel","industrial"],
-          "min":-1,
-          "max":3,
-          "interval":120
-        }
-      ],
-    },
-//other
-	{
-      "id":"EasyAutoRepairGarageSpot",
-      "name":"Easy Auto Repair",
-      "description":"Apparently this repair shop is oh so conveniently placed at a common crash point - Coming off the bridge at high speeds aha!",
-      "preview":"previews/easyAutoRepairs.jpg",
-      "pickUpSpotNames":["EasyAutoRepairGarage1"],
-      "dropOffSpotNames":["EasyAutoRepairGarage1"],
-      "sitesFile":"newCareer.sites.json",
-      "showIncomingCargo":true,
-      "logisticTypesProvided":["mechanicalParts","parcel"],
-      "logisticTypesReceived":["medicalAid","food","parcel"],
-      "unlockCondition":{"type":"minItemCount","target":1},
-      "logisticMaxItems":2,
-	  "logisticGenerators":[
-	    {
-          "type":"receiver",
-          "logisticTypes":["medicalAid","mechanicalParts","parcel"],
-          "min":-3,
-          "max":1,
-          "interval":120
-        }, {
-          "type":"receiver",
-          "logisticTypes":["food","mechanicalParts"],
-          "min":-1,
-          "max":1,
-          "interval":120
-        }, {
-          "type":"provider",
-          "logisticTypes":["parcel"],
-          "min":-1,
-          "max":2,
-          "interval":240
-        }, {
-          "type":"provider",
-          "logisticTypes":["mechanicalParts"],
-          "min":-1,
-          "max":3,
-          "interval":120
-        }
-      ],
-    },
-	{
-      "id":"MobilePhoneTowersLocation",
-      "name":"Mobile Tower",
-      "description":"The enemy of the Bird",
-      "preview":"previews/untitled.jpg",
-      "pickUpSpotNames":["MobileTowerNorth","MobileTowerSite","MobileTower2"],
-      "dropOffSpotNames":["MobileTowerNorth","MobileTowerSite","MobileTower2"],
-      "sitesFile":"newCareer.sites.json",
-      "showIncomingCargo":true,
-      "logisticTypesProvided":[],
-      "logisticTypesReceived":["medicalAid","mechanicalParts","food","parcel"],
-	  "logisticGenerators":[
-	    {
-          "type":"receiver",
-          "logisticTypes":["medicalAid","mechanicalParts","parcel"],
-          "min":0,
-          "max":1,
-          "interval":300
-        }, {
-          "type":"receiver",
-          "logisticTypes":["food"],
-          "min":0,
-          "max":1,
-          "interval":120
-        }
-      ],
-    },
-	{
-      "id":"solarFarmSite",
-      "name":"Solar Farm",
-      "description":"The Sqweak of Global Warming",
-      "preview":"previews/untitled.jpg",
-      "pickUpSpotNames":["solarFarmParking"],
-      "dropOffSpotNames":["solarFarmParking"],
-      "sitesFile":"newCareer.sites.json",
-      "showIncomingCargo":true,
-      "logisticTypesProvided":[],
-      "logisticTypesReceived":["parcel"],
-      "logisticMaxItems":2,
-	  "logisticGenerators":[
-	    {
-          "type":"receiver",
-          "logisticTypes":["parcel"],
-          "min":-3,
-          "max":2,
-          "interval":120
-        }
-      ],
-    },
   ]
 }

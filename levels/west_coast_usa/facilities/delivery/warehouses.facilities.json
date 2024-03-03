@@ -52,8 +52,8 @@
       "sitesFile":"warehouses.sites.json",
       "showIncomingCargo":true,
       "logisticTypesProvided":["parcel","shopSupplies","officeSupplies","mechanicalParts","foodSupplies", "industrial"],
-      "logisticTypesReceived":["parcel","shopSupplies","officeSupplies","mechanicalParts","foodSupplies", "industrial"],
-      "logisticMaxItems":52,
+      "logisticTypesReceived":["shopSupplies","officeSupplies","mechanicalParts","foodSupplies", "industrial"],
+      "logisticMaxItems":152,
       "unlockCondition":{"type":"minItemCount","target":1}
     }
   ]

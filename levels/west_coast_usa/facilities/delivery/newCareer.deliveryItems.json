@@ -1,94 +1,257 @@
-//please install my helicopter/helipad DLC jk I'll figure something out in the future
 {
-  "badAID": {
-    "names":["Multi-Use Bad-Aid"],
-    "logisticTypes":["medicalAid"],
-    "slots":[1,2],
-    "cargoType":"parcel",
-    "rarity":1,
-    "worth":200,
-    "generationChance":0.3,
-    "duplicationChance":[1,0.9,0.8,0.7,0.6,0.5,0.3,0.2],
-    "offerDuration":210,
-    "weight":[1],
-    "modChance":{"timed":0.7,"fragile":0},
+  "nc_badAID": {
+    "names": [
+      "Multi-Use Bad-Aid"
+    ],
+    "logisticTypes": [
+      "parcel"
+    ],
+    "slots": [
+      1,
+      2
+    ],
+    "cargoType": "parcel",
+    "rarity": 1,
+    "worth": 200,
+    "generationChance": 0.3,
+    "duplicationChance": [
+      1,
+      0.9,
+      0.8,
+      0.7,
+      0.6,
+      0.5,
+      0.3,
+      0.2
+    ],
+    "offerDuration": 210,
+    "weight": [
+      1
+    ],
+    "modChance": {
+      "timed": 0.7,
+      "fragile": 0
+    }
   },
-  "monehDeliveryItem": {
-    "names":["Bundles of Cash","Bank Notes","Money Bags"],
-    "logisticTypes":["monehDelivery"],
-    "slots":[1,2,3,4,5,6,7,8],
-    "cargoType":"parcel",
-    "rarity":1,
-    "worth":2000,
-    "generationChance":0.3,
-    "duplicationChance":[1],
-    "offerDuration":2100,
-    "weight":[1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32],
-    "modChance":{"timed":0.7,"fragile":0},
+  "parcelItem": {
+    "names": [
+      "Bundles of Cash",
+      "Bank Notes",
+      "Money Bags"
+    ],
+    "logisticTypes": [
+      "parcel"
+    ],
+    "slots": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8
+    ],
+    "cargoType": "parcel",
+    "rarity": 1,
+    "worth": 2000,
+    "generationChance": 0.3,
+    "duplicationChance": [
+      1
+    ],
+    "offerDuration": 2100,
+    "weight": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17,
+      18,
+      19,
+      20,
+      21,
+      22,
+      23,
+      24,
+      25,
+      26,
+      27,
+      28,
+      29,
+      30,
+      31,
+      32
+    ],
+    "modChance": {
+      "timed": 0.7,
+      "fragile": 0
+    }
   },
-  "LensFlareFanGoods": {
-    "names":["Lens Flare Fan Merch","Actor Autographs","Limited Edition film copies","Suggestive Photographs","Special Edition Soundtracks","Limited Edition Figurines","Admiral Photographs","Used Set Clothing"],
-    "logisticTypes":["fanMerch"],
-    "slots":[1,2],
-    "cargoType":"parcel",
-    "rarity":1,
-    "worth":500,
-    "generationChance":0.3,
-    "duplicationChance":[1,0.3,0.1],
-    "offerDuration":180,
-    "weight":[1,2,3,4,5,6,7,8],
-    "modChance":{"timed":0.7},
+  "nC_LensFlareFanGoods": {
+    "names": [
+      "Lens Flare Fan Merch",
+      "Actor Autographs",
+      "Limited Edition film copies",
+      "Suggestive Photographs",
+      "Special Edition Soundtracks",
+      "Limited Edition Figurines",
+      "Admiral Photographs",
+      "Used Set Clothing"
+    ],
+    "logisticTypes": [
+      "parcel"
+    ],
+    "slots": [
+      1,
+      2
+    ],
+    "cargoType": "parcel",
+    "rarity": 1,
+    "worth": 500,
+    "generationChance": 0.6,
+    "duplicationChance": [
+      1,
+      0.3,
+      0.1
+    ],
+    "offerDuration": 180,
+    "weight": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8
+    ],
+    "modChance": {
+      "timed": 0.7
+    }
   },
   "nC_Crap": {
-    "names":["Crapshack Kit"],
-    "logisticTypes":["shopSupplies"],
-    "slots":[4],
-    "cargoType":"parcel",
-    "rarity":3,
-    "worth":1,
-    "generationChance":0.1,
-    "duplicationChance":[1],
-    "offerDuration":300,
-    "weight":[8],
-    "modChance":{"fragile":0},
+    "names": [
+      "Crapshack Kit"
+    ],
+    "logisticTypes": [
+      "shopSupplies"
+    ],
+    "slots": [
+      4
+    ],
+    "cargoType": "parcel",
+    "rarity": 3,
+    "worth": 1,
+    "generationChance": 0.1,
+    "duplicationChance": [
+      1
+    ],
+    "offerDuration": 300,
+    "weight": [
+      8
+    ],
+    "modChance": {
+      "fragile": 0
+    }
   },
   "nC_CrapPallet": {
-    "names":["Crapshack Pallet"],
-    "logisticTypes":["industrial"],
-    "slots":[16],
-    "cargoType":"parcel",
-    "rarity":4,
-    "worth":1,
-    "generationChance":0.1,
-    "duplicationChance":[1,0.3,0.1],
-    "offerDuration":240,
-    "weight":[32],
-    "modChance":{"fragile":0},
+    "names": [
+      "Crapshack Pallet"
+    ],
+    "logisticTypes": [
+      "industrial"
+    ],
+    "slots": [
+      16
+    ],
+    "cargoType": "parcel",
+    "rarity": 4,
+    "worth": 1,
+    "generationChance": 0.1,
+    "duplicationChance": [
+      1,
+      0.3,
+      0.1
+    ],
+    "offerDuration": 240,
+    "weight": [
+      32
+    ],
+    "modChance": {
+      "fragile": 0
+    }
   },
   "nC_ChinaTownHC": {
-    "names":["Chabuduo Honey Chicken"],
-    "logisticTypes":["food"],
-    "slots":[1],
-    "cargoType":"parcel",
-    "rarity":2,
-    "worth":2,
-    "generationChance":0.1,
-    "duplicationChance":[1,0.7,0.5,0.3,0.2,0.1],
-    "offerDuration":240,
-    "weight":[1],
-    "modChance":{"fragile":0},
+    "names": [
+      "Chabuduo Honey Chicken"
+    ],
+    "logisticTypes": [
+      "food"
+    ],
+    "slots": [
+      1
+    ],
+    "cargoType": "parcel",
+    "rarity": 2,
+    "worth": 2,
+    "generationChance": 0.1,
+    "duplicationChance": [
+      1,
+      0.7,
+      0.5,
+      0.3,
+      0.2,
+      0.1
+    ],
+    "offerDuration": 240,
+    "weight": [
+      1
+    ],
+    "modChance": {
+      "fragile": 0
+    }
   },
   "nC_ChinaTownHCFrozen": {
-    "names":["Frozen Makeshift Honey Chicken"],
-    "logisticTypes":["foodSupplies"],
-    "slots":[8],
-    "cargoType":"parcel",
-    "rarity":3,
-    "worth":1.5,
-    "generationChance":0.1,
-    "duplicationChance":[1,0.7,0.5,0.3,0.2,0.1],
-    "offerDuration":240,
-    "weight":[9],
-    "modChance":{"timed":1, "fragile":0},
+    "names": [
+      "Frozen Makeshift Honey Chicken"
+    ],
+    "logisticTypes": [
+      "foodSupplies"
+    ],
+    "slots": [
+      8
+    ],
+    "cargoType": "parcel",
+    "rarity": 3,
+    "worth": 1.5,
+    "generationChance": 0.1,
+    "duplicationChance": [
+      1,
+      0.7,
+      0.5,
+      0.3,
+      0.2,
+      0.1
+    ],
+    "offerDuration": 240,
+    "weight": [
+      9
+    ],
+    "modChance": {
+      "timed": 1,
+      "fragile": 0
+    }
   }
 }

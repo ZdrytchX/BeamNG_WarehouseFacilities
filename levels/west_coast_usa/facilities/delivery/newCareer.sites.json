@@ -24,7 +24,7 @@
         }
       },
       "isMultiSpot":false,
-      "name":"AdministriationBuilding",
+      "name":"nC_AdministriationBuildingParking",
       "oldId":45,
       "pos":[
         -235.8898163,
@@ -108,7 +108,7 @@
         }
       },
       "isMultiSpot":false,
-      "name":"BeachSide",
+      "name":"nC_BeachSide",
       "oldId":22,
       "pos":[
         378.1188354,
@@ -150,7 +150,7 @@
         }
       },
       "isMultiSpot":false,
-      "name":"BehindFireStation",
+      "name":"nC_BehindFireStation",
       "oldId":49,
       "pos":[
         -875.7957153,
@@ -570,7 +570,7 @@
         }
       },
       "isMultiSpot":false,
-      "name":"ChinaTownAlleyway",
+      "name":"nC_ChinaTownAlleyway",
       "oldId":48,
       "pos":[
         -730.6114502,
@@ -612,7 +612,7 @@
         }
       },
       "isMultiSpot":false,
-      "name":"ChurchEntrance",
+      "name":"ChurchEntranceDropOff",
       "oldId":50,
       "pos":[
         -865.3477173,
@@ -732,7 +732,7 @@
         }
       },
       "isMultiSpot":false,
-      "name":"DragstripTrailerParking",
+      "name":"nC_DragstripTrailerParking",
       "oldId":69,
       "pos":[
         -284.2830505,
@@ -768,7 +768,7 @@
         "values":{}
       },
       "isMultiSpot":true,
-      "name":"EasyAutoRepairCarPark1",
+      "name":"nC_EasyAutoRepairCarPark1",
       "oldId":72,
       "pos":[
         141.8383026,
@@ -804,7 +804,7 @@
         "values":{}
       },
       "isMultiSpot":false,
-      "name":"EasyAutoRepairCommercialPark1",
+      "name":"nC_EasyAutoRepairCommercialPark1",
       "oldId":74,
       "pos":[
         163.8217926,
@@ -840,7 +840,7 @@
         "values":{}
       },
       "isMultiSpot":false,
-      "name":"EasyAutoRepairCommercialPark2",
+      "name":"nC_EasyAutoRepairCommercialPark2",
       "oldId":75,
       "pos":[
         137.1387482,
@@ -876,7 +876,7 @@
         "values":{}
       },
       "isMultiSpot":false,
-      "name":"EasyAutoRepairCommercialPark3",
+      "name":"nC_EasyAutoRepairCommercialPark3",
       "oldId":76,
       "pos":[
         147.2754059,
@@ -912,7 +912,7 @@
         "values":{}
       },
       "isMultiSpot":false,
-      "name":"EasyAutoRepairCommercialPark4",
+      "name":"nC_EasyAutoRepairCommercialPark4",
       "oldId":77,
       "pos":[
         132.0131989,
@@ -954,7 +954,7 @@
         }
       },
       "isMultiSpot":true,
-      "name":"EasyAutoRepairGarage1",
+      "name":"nC_EasyAutoRepairGarage1",
       "oldId":66,
       "pos":[
         146.9569244,
@@ -990,7 +990,7 @@
         "values":{}
       },
       "isMultiSpot":false,
-      "name":"FastAutomotiveRepairGarage",
+      "name":"nC_FastAutomotiveRepairGarage",
       "oldId":93,
       "pos":[
         306.8329163,
@@ -1032,7 +1032,7 @@
         }
       },
       "isMultiSpot":false,
-      "name":"HideAtHomeLocation",
+      "name":"nC_HideAtHomeLocation",
       "oldId":28,
       "pos":[
         -175.8710327,
@@ -1074,7 +1074,7 @@
         }
       },
       "isMultiSpot":false,
-      "name":"HotRolledBackParking",
+      "name":"nC_HotRolledBackParking",
       "oldId":42,
       "pos":[
         -1479.1875,
@@ -1116,7 +1116,7 @@
         }
       },
       "isMultiSpot":false,
-      "name":"HotRolledReception",
+      "name":"nC_HotRolledReception",
       "oldId":43,
       "pos":[
         -1253.056519,
@@ -1158,7 +1158,7 @@
         }
       },
       "isMultiSpot":false,
-      "name":"JettyLookout",
+      "name":"nC_JettyLookout",
       "oldId":56,
       "pos":[
         -265.374176,
@@ -1200,7 +1200,7 @@
         }
       },
       "isMultiSpot":false,
-      "name":"LighthouseParking",
+      "name":"nC_LighthouseParking",
       "oldId":57,
       "pos":[
         -1173.402588,
@@ -1536,7 +1536,7 @@
         }
       },
       "isMultiSpot":false,
-      "name":"PowerlineHouse",
+      "name":"nC_PowerlineHouse",
       "oldId":30,
       "pos":[
         -608.1780396,
@@ -1620,7 +1620,7 @@
         }
       },
       "isMultiSpot":false,
-      "name":"RaceWatchstandsSouthCorner",
+      "name":"nC_RaceWatchstandsSouthCorner",
       "oldId":26,
       "pos":[
         -61.13178635,
@@ -1662,7 +1662,7 @@
         }
       },
       "isMultiSpot":false,
-      "name":"RacewayServicePits",
+      "name":"nC_RacewayServicePits",
       "oldId":64,
       "pos":[
         -238.040863,
@@ -1704,7 +1704,7 @@
         }
       },
       "isMultiSpot":false,
-      "name":"RacewaySouthService",
+      "name":"nC_RacewaySouthService",
       "oldId":63,
       "pos":[
         786.6860962,
@@ -1788,7 +1788,7 @@
         }
       },
       "isMultiSpot":false,
-      "name":"RadioStationLookout",
+      "name":"nC_RadioStationLookout",
       "oldId":24,
       "pos":[
         655.6157227,
@@ -1830,7 +1830,7 @@
         }
       },
       "isMultiSpot":false,
-      "name":"RefineryDocksA",
+      "name":"nC_RefineryDocksA",
       "oldId":59,
       "pos":[
         -549.0316162,
@@ -1872,7 +1872,7 @@
         }
       },
       "isMultiSpot":false,
-      "name":"RefineryReception",
+      "name":"nC_RefineryReception",
       "oldId":58,
       "pos":[
         -859.1425171,
@@ -1998,7 +1998,7 @@
         }
       },
       "isMultiSpot":false,
-      "name":"ShuffleboardLogisticsHeadOffice",
+      "name":"nC_ShuffleboardLogisticsHeadOffice",
       "oldId":60,
       "pos":[
         -456.1903076,
@@ -2126,7 +2126,7 @@
         }
       },
       "isMultiSpot":false,
-      "name":"TramwayParking",
+      "name":"nC_TramwayParking",
       "oldId":53,
       "pos":[
         -844.8674316,
@@ -2168,7 +2168,7 @@
         }
       },
       "isMultiSpot":false,
-      "name":"UnderConstructionAreaNearHighway",
+      "name":"nC_UnderConstructionAreaNearHighway",
       "oldId":54,
       "pos":[
         -541.0970459,
@@ -2210,7 +2210,7 @@
         }
       },
       "isMultiSpot":false,
-      "name":"solarFarmParking",
+      "name":"nC_solarFarmParking",
       "oldId":68,
       "pos":[
         -208.6551514,
@@ -2252,7 +2252,7 @@
         }
       },
       "isMultiSpot":false,
-      "name":"tennisCourtsReception",
+      "name":"nC_tennisCourtsReception",
       "oldId":67,
       "pos":[
         -28.88233376,
