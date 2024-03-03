@@ -54,8 +54,7 @@
           ["tnkl3p", 0.0, 5.68, 1.3],
           ["tnkl4p", 0.0, 3.10, 1.3],
 
-         {"collision":true},
-         {"selfCollision":true},
+
          {"group":"tanker_load"},
          {"nodeWeight":"$=90*($loadVolume/35000)+1"},
           ["tnkl1", 0.0, 12.18, 2.02],
@@ -64,6 +63,8 @@
           ["tnkl4", 0.0, 6.08, 2.02],
           ["tnkl5", 0.0, 4.09, 2.02],
           ["tnkl6", 0.0, 2.10, 2.02],
+        {"collision":true},
+        {"selfCollision":true},
          {"group":""},
 
     ],
